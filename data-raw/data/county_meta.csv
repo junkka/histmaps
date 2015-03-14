@@ -1,0 +1,29 @@
+"code","lan_id","name","letter","center","start","end"
+1,18,"Stockholms","AB","Stockholm","1968",NA
+3,20,"Uppsala","C","Uppsala","1634",NA
+4,19,"Södermanlands","D","Nyköping","1683",NA
+5,3,"Östergötlands","E","Linköping","1634",NA
+6,10,"Jönköpings","F","Jönköping","1687",NA
+7,14,"Kronobergs","G","Växjö","1674",NA
+8,11,"Kalmar","H","Kalmar","1634",NA
+9,5,"Gotlands","I","Visby","1678",NA
+10,4,"Blekinge","K","Karlskrona","1683",NA
+11,13,"Kristianstads","L","Kristianstad","1719",1997
+12,15,"Skåne","M","Malmö","1997",NA
+13,8,"Hallands","N","Halmstad","1719",NA
+14,7,"Västra Götalands","O","Göteborg","1998",NA
+15,1,"Älvsborgs","P","Vänersborg","1634",1998
+16,17,"Skaraborgs","R","Mariestad","1634",1998
+17,21,"Värmlands","S","Karlstad","1779",NA
+18,2,"Örebro","T","Örebro","1634",NA
+19,24,"Västmanlands","U","Västerås","1634",NA
+20,12,"Dalarnas","W","Falun","1634",NA
+21,6,"Gävleborgs","X","Gävle","1762",NA
+22,23,"Västernorrlands","Y","Härnösand","1762",NA
+23,9,"Jämtlands","Z","Östersund","1810",NA
+24,22,"Västerbottens","AC","Umeå","1638",NA
+25,16,"Norrbottens","BD","Luleå","1810",NA
+26,,"Svartsjö",,"Drottningholm",,,
+27,,"Närkes och Värmaland",,"Örebro slott",,,
+28,,"Ölands",,"Bornholm",,,
+2,,"Stockholms överståthållarskap",,"Stockholm",,,

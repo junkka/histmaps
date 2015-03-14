@@ -1,0 +1,973 @@
+forkod,nadkod,name,c_name,code,from,tom,lan
+12502,12502000,Adelsö ,Stockholms,1,0,1785,-1786 Stockholms län
+12502,12502000,Adelsö ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12502,12502000,Adelsö ,Stockholms,1,1810,9999,1810- Stockholms län.
+231302,231302000,Alanäs ,Västernorrlands,22,1808,1809,-1810 Västernorrlands län
+231302,231302000,Alanäs ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+212103,212103001,Alfta ,,22,0,1638,-1762 Västernorrlands län
+212103,212103000,Alfta ,,22,1639,1761,1762-06-29- Gävleborgs län.
+212103,212103000,Alfta ,,21,1762,9999,
+178409,178409000,Älgå ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178409,178409000,Älgå ,Värmlands,17,1779,9999,1779- Värmlands län.
+86203,86203000,Algutsboda ,,7,0,1968,1937-01-01 överfört Grimmansmåla 1:6 till Vissefjärda i Kalmar län
+86203,86203000,Algutsboda ,,8,1969,9999,1947-01-01 överfört delar av Krysseboda och Rasslebygd samt 1954-01-01 delar av dessa jämte del av Grimmansmåla till Emmaboda i Kalmar län
+188004,188004000,Almby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188004,188004000,Almby ,Örebro,18,1779,9999,1779- Örebro län.
+38031,38031000,Almunge ,Stockholms,1,0,1970,-1970 Stockholms län
+38031,38031000,Almunge ,Uppsala,3,1971,9999,1971- Uppsala län.
+230910,230910000,Alsen ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230910,230910000,Alsen ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+38033,38033000,Alsike ,Stockholms,1,0,1970,-1970 Stockholms län
+38033,38033000,Alsike ,Uppsala,3,1971,9999,1971- Uppsala län.
+178007,178007000,Alster ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178007,178007000,Alster ,Värmlands,17,1779,9999,1779- Värmlands län.
+38136,38136000,Altuna ,Västmanlands,19,0,1970,-1970 Västmanlands län
+38136,38136000,Altuna ,Uppsala,3,1971,9999,1971- Uppsala län.
+236103,236103000,Älvros ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236103,236103000,Älvros ,Gävleborgs,21,1762,1809,1762-06-29-1810 Gävleborgs län
+236103,236103000,Älvros ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+258403,258403001,Karesuando,,24,1602,1605,
+258403,258403000,Karesuando,,24,1606,1809,
+258403,258403000,Karesuando,,25,1810,9999,
+230503,230503000,Hällesjö,,22,0,1809,
+230503,230503000,Hällesjö,,23,1810,9999,
+256002,256002000,Älvsby ,Västerbottens,24,1809,1809,-1810 Västerbottens län
+256002,256002000,Älvsby ,Norrbottens,25,1810,9999,1810-05-21- Norrbottens län.
+138224,138224000,Älvsered ,Älvsborgs,15,0,1970,-1970 Älvsborgs län
+138224,138224000,Älvsered ,Hallands,13,1971,9999,1971- Hallands län.
+148026,148026001,Angered ,Älvsborgs,15,0,1966,1930-01-01 överfört område från Angered i Älvsborgs län till Göteborgs Gamlestad (se ) i Göteborgs och Bohus län
+148026,148026001,Angered ,Älvsborgs,14,1967,1970,-1966 Älvsborgs län
+188000,188003005,Ånsta ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188000,188003005,Ånsta ,Örebro,18,1779,1953,1779- Örebro län.
+218309,218309000,Arbrå ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218309,218309000,Arbrå ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+232101,232101000,Åre ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232101,232101000,Åre ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+250671,250671000,Arjeplog ,Västerbottens,24,1640,1836,-1837 Västerbottens län
+250671,250671000,Arjeplog ,Norrbottens,25,1837,9999,1837-02-10- Norrbottens län.
+218104,218104000,Årsunda ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218104,218104000,Årsunda ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+250571,250571001,Arvidsjaur ,Västerbottens,24,1606,1639,-1837 Västerbottens län
+250571,250571002,Arvidsjaur ,Västerbottens,24,1640,1836,1837-02-10- Norrbottens län.
+250571,250571002,Arvidsjaur ,Norrbottens,25,1837,1861,
+178402,178402001,Arvika västra ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178402,178402001,Arvika västra ,Värmlands,17,1779,1905,1779- Värmlands län.
+230904,230904000,Ås ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230904,230904000,Ås ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+232606,232606000,Åsarne ,Västernorrlands,22,1764,1809,-1810 Västernorrlands län
+232606,232606000,Åsarne ,Jämtlands,23,1810,9999,1810-05-07 Jämtlands län.
+188015,188015000,Asker ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188015,188015000,Asker ,Örebro,18,1779,9999,1779Örebro län
+188201,188201001,Askersund ,,27,0,1642,
+188200,188201003,Askersunds landsförsamling ,,27,1643,1778,
+188200,188201003,Askersunds landsförsamling ,,18,1779,1964,
+188200,188201002,Askersunds stads,,27,1643,1778,
+188200,188201002,Askersunds stads,,18,1779,1964,
+230903,230903000,Aspås ,Västernorrlands,22,0,1809,- 18 10 Västernorrlands län
+230903,230903000,Aspås ,Jämtlands,23,1810,9999,1810-05-07 - Jämtlands län.
+188012,188012000,Axberg ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188012,188012000,Axberg ,Örebro,18,1779,9999,1779- Örebro län.
+232601,232601001,Berg ,,22,0,1763,
+232601,232601000,Berg ,,22,1764,1809,
+232601,232601000,Berg ,,23,1810,9999,
+148027,148027000,Bergum ,Älvsborgs,15,0,1966,-1966 Älvsborgs län
+148027,148027000,Bergum ,Bohus,14,1967,9999,1967- Göteborgs och Bohus län.
+140104,140104000,Björketorp ,Bohus,15,0,1970,1952-01-01 överfört drygt 8 kvadratkilometer från Härryda i Göteborgs och Bohus län till Björketorp i Älvsborgs län
+140104,140104000,Björketorp ,Älvsborgs,14,1971,9999,-1970 Älvsborgs län
+218409,218409000,Bjuråker ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218409,218409000,Bjuråker ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+240301,240301000,Bjurholm ,Västernorrlands,22,1808,1809,-1810 Västernorrlands län
+240301,240301000,Bjurholm ,Västerbottens,24,1810,9999,1810-05-21 - Västerbottens län.
+176002,176002000,Bjurtjärn ,Närkes,27,1630,1778,-1779 Närkes och Värmlands län
+176002,176002000,Bjurtjärn ,Örebro,18,1779,1951,1779-1951 Örebro län
+176002,176002000,Bjurtjärn ,Värmlands,17,1952,9999,1952- Värmlands län.
+38029,38029000,Bladåker ,Stockholms,1,0,1970,-1970 Stockholms län
+38029,38029000,Bladåker ,Uppsala,3,1971,9999,1971- Uppsala län.
+176505,176505000,Blomskog ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176505,176505000,Blomskog ,Värmlands,17,1779,9999,1779- Värmlands län.
+186106,186106000,Bo ,Närkes,27,1735,1778,-1779 Närkes och Värmlands län
+186106,186106000,Bo ,Örebro,18,1779,9999,1779- Örebro län samt -1867 del (Kängstorp) i Östergötlands län
+171503,171503000,Boda ,Närkes,27,1616,1778,-1779 Närkes och Värmlands län
+171503,171503000,Boda ,Värmlands,17,1779,9999,1779- Värmlands län.
+230507,230507000,Bodsjö ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230507,230507000,Bodsjö ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+231307,231307000,Bodum ,Västernorrlands,22,1799,1973,-1973 Västernorrlands län
+231307,231307000,Bodum ,Jämtlands,23,1974,9999,1974- Jämtlands län.
+218303,218303000,Bollnäs ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218303,218303000,Bollnäs ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+78118,78118000,Bolmsö ,Jönköpings,6,0,1969,
+78118,78118000,Bolmsö ,Jönköpings,7,1970,9999,
+230303,230303000,Borgvattnet ,Västernorrlands,22,1781,1809,-1810 Västernorrlands län
+230303,230303000,Borgvattnet ,Jämtlands,23,1810,9999,1810-05-07-1879 huvuddelen i Jämtlands län
+176402,176402000,Borgvik ,Närkes,27,1716,1778,-1779 Närkes och Värmlands län
+176402,176402000,Borgvik ,Värmlands,17,1779,9999,1779- Värmlands län.
+38204,38204003,Börstil ,,1,0,1640,
+38204,38204000,Börstil ,,1,1641,1970,
+38204,38204000,Börstil ,,3,1971,9999,
+178504,178504000,Botilsäter ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178504,178504000,Botilsäter ,Värmlands,17,1779,9999,1779- Värmlands län.
+230501,230501000,Bräcke ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230501,230501000,Bräcke ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+178203,178203000,Brattfors ,Närkes,27,1661,1778,-1779 Närkes och Värmlands län
+178203,178203000,Brattfors ,Värmlands,17,1779,9999,1779- Värmlands län.
+13901,13901000,Bro ,Uppsala,3,0,1970,-1970 Uppsala län
+13901,13901000,Bro ,Stockholms,1,1971,9999,1971- Stockholms län.
+178503,178503000,Bro ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178503,178503000,Bro ,Värmlands,17,1779,9999,1779- Värmlands län.
+238007,238007001,Brunflo ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238007,238007001,Brunflo ,Jämtlands,23,1810,1820,1810-05-07- Jämtlands län.
+178411,178411001,Brunskog ,,27,0,1615,
+178411,178411002,Brunskog ,,27,1616,1704,
+178411,178411000,Brunskog ,,27,1705,1778,
+178411,178411000,Brunskog ,,17,1779,9999,
+173708,173708001,Dalby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+173708,173708001,Dalby ,Värmlands,17,1779,1830,1779- Värmlands län.
+176403,176403000,Ed ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176403,176403000,Ed ,Värmlands,17,1779,9999,1779- Värmlands län.
+173001,173001000,Eda ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+173001,173001000,Eda ,Värmlands,17,1779,9999,1779- Värmlands län.
+188023,188023000,Edsberg ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188023,188023000,Edsberg ,Örebro,18,1779,9999,1779- Örebro län.
+188103,188103000,Ekeby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188103,188103000,Ekeby ,Örebro,18,1779,9999,1779- Örebro län.
+188000,188003004,Eker ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188000,188003004,Eker ,Örebro,18,1779,1953,1779-1953 Örebro län.
+12503,12503000,Ekerö ,Stockholms,1,0,1785,-1786 Stockholms län
+12503,12503000,Ekerö ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12503,12503000,Ekerö ,Stockholms,1,1810,9999,1810- Stockholms län.
+218407,218407000,Enånger ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218407,218407000,Enånger ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+18104,18104001,Ytterenhörna,,4,0,1947,
+18104,18104002,Överenhörna,,4,0,1947,
+18104,18104000,Enhörna ,Södermanlands,4,1948,1966,-1966 Södermanlands län
+18104,18104000,Enhörna ,Stockholms,1,1967,9999,1967- Stockholms län.
+188011,188011000,Ervalla ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188011,188011000,Ervalla ,Örebro,18,1779,9999,1779- Örebro län.
+178507,178507000,Eskilsäter ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178507,178507000,Eskilsäter ,Värmlands,17,1779,9999,1779- Värmlands län.
+12508,12508000,Färentuna ,Stockholms,1,0,1785,-1786 Stockholms län
+12508,12508000,Färentuna ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12508,12508000,Färentuna ,Stockholms,1,1810,9999,1810- Stockholms län.
+131505,131505000,Färgaryd ,Jönköpings,6,0,1973,-1973 Jönköpings län
+131505,131505000,Färgaryd ,Hallands,13,1974,9999,1974- Hallands län.
+216104,216104001,Färila ,,22,0,1747,
+216104,216104002,Färila ,,22,1748,1761,
+216104,216104002,Färila ,,21,1762,1922,
+38030,38030000,Faringe ,Stockholms,1,0,1970,-1970 Stockholms län
+38030,38030000,Faringe ,Uppsala,3,1971,9999,1971- Uppsala län.
+178200,178201001,Färnebo ,,27,0,1610,
+178200,178201002,Färnebo ,,27,1611,1623,
+178200,178201003,Färnebo ,,27,1624,1692,
+178200,178201004,Färnebo ,,27,1693,1730,
+178200,178201005,Färnebo ,,27,1731,1778,
+178200,178201005,Färnebo ,,17,1779,1970,
+188505,188505001,Fellingsbro ,Örebro,27,0,1778,1779-1890 Örebro län (och delvis Västmanlands län)
+188505,188505001,Fellingsbro ,Örebro,18,1779,1921,1890-02-21 enligt KBr Västmanlandsfjärdingen överförd till Örebro län
+131506,131506000,Femsjö ,Jönköpings,6,0,1973,
+131506,131506000,Femsjö ,Kronobergs,13,1974,9999,
+178201,178201006,Filipstad ,Närkes,27,1611,1778,-1779 Närkes och Värmlands län
+178201,178201006,Filipstad ,Värmlands,17,1779,1970,1779- Värmlands län.
+186002,186002000,Finnerödja ,Skaraborgs,16,1630,1966,-1966 Skaraborgs län
+186002,186002000,Finnerödja ,Örebro,18,1967,9999,1967- Örebro län.
+168649,168649000,Fivlered ,Älvsborgs,15,0,1973,-1973 Älvsborgs län
+168649,168649000,Fivlered ,Skaraborgs,16,1974,9999,1974- Skaraborgs län.
+231306,231306001,Fjällsjö ,,22,0,1771,
+231306,231306002,Fjällsjö ,,22,1772,1798,
+231306,231306000,Fjällsjö ,,22,1799,1973,
+231306,231306000,Fjällsjö ,,23,1974,9999,
+230906,230906001,Föllinge ,,22,0,1786,
+230906,230906002,Föllinge ,,22,1787,1809,
+230906,230906002,Föllinge ,,23,1810,1841,
+230302,230302000,Fors ,,22,0,1809,
+230302,230302000,Fors ,,23,1810,9999,
+218411,218411000,Forsa ,,22,0,1761,
+218411,218411000,Forsa ,,21,1762,9999,
+38202,38202000,Forsmark ,,1,1612,1970,
+38202,38202000,Forsmark ,,3,1971,9999,
+238002,238002000,Frösö ,,22,0,1809,
+238002,238002000,Frösö ,,23,1810,9999,
+38132,38132000,Frösthult ,,19,0,1970,
+38132,38132000,Frösthult ,,3,1971,9999,
+171502,171502000,Frykerud ,,27,0,1778,
+171502,171502000,Frykerud ,,17,1779,9999,
+173701,173701001,Fryksände ,,27,0,1764,
+173701,173701002,Fryksände ,,27,1765,1778,
+173701,173701002,Fryksände ,,17,1779,1821,
+188018,188018000,Gällersta ,,27,0,1778,
+188018,188018000,Gällersta ,,18,1779,9999,
+252371,252371001,Gällivare ,,24,1742,1809,
+252371,252371001,Gällivare ,,25,1810,1961,
+56107,56107000,Gärdserum ,,8,0,1970,
+56107,56107000,Gärdserum ,,5,1971,9999,
+178205,178205001,Gåsborn ,,27,1693,1776,
+178205,178205000,Gåsborn ,,27,1777,1778,
+178205,178205000,Gåsborn ,,17,1779,9999,
+218001,218001001,Gävle Heliga Trefaldighet ,,22,0,1761,
+218001,218001001,Gävle Heliga Trefaldighet ,,21,1762,1915,
+188027,188027000,Glanshammar ,,27,0,1778,
+188027,188027000,Glanshammar ,,18,1779,9999,
+178405,178405000,Glava ,,27,0,1778,
+178405,178405000,Glava ,,17,1779,9999,
+128620,128620000,Glemminge ,,11,0,1970,
+128620,128620000,Glemminge ,,12,1971,9999,
+213204,213204000,Gnarp ,,22,0,1761,
+213204,213204000,Gnarp ,,21,1762,9999,
+198404,198404000,Götlunda ,,27,0,1778,
+198404,198404000,Götlunda ,,18,1779,1973,
+198404,198404000,Götlunda ,,19,1974,9999,
+176604,176604000,Gräsmark ,,27,1751,1778,
+176604,176604000,Gräsmark ,,17,1779,9999,
+38208,38208000,Gräsö ,,1,1641,1970,
+38208,38208000,Gräsö ,,3,1971,9999,
+178008,178008001,Grava ,,27,0,1778,
+178008,178008001,Grava ,,17,1779,1907,
+188009,188009000,Gräve ,,27,0,1778,
+188009,188009000,Gräve ,,18,1779,9999,
+138322,138322000,Grimmared ,,15,0,1970,
+138322,138322000,Grimmared ,,13,1971,9999,
+138325,138325000,Gunnarsjö ,,15,0,1970,
+138325,138325000,Gunnarsjö ,,13,1971,9999,
+178407,178407001,Gunnarskog ,,27,0,1778,
+178407,178407001,Gunnarskog ,,17,1779,1849,
+13905,13905000,håbo-tibble ,,3,0,1970,
+13905,13905000,håbo-tibble ,,1,1971,9999,
+232602,232602000,hackås ,,22,0,1809,
+232602,232602000,hackås ,,23,1810,9999,
+188022,188022000,hackvad ,,27,0,1778,
+188022,188022000,hackvad ,,18,1779,9999,
+238010,238010000,häggenås ,,22,0,1809,
+238010,238010000,häggenås ,,23,1810,9999,
+88109,88109000,hälleberga ,,7,0,1968,
+88109,88109000,hälleberga ,,8,1969,9999,
+186301,186301000,hällefors ,,27,1644,1778,
+186301,186301000,hällefors ,,18,1779,9999,
+232106,232106000,hallen ,,22,0,1809,
+232106,232106000,hallen ,,23,1810,9999,
+168604,168604000,hällestad ,,15,0,1951,
+168604,168604000,hällestad ,,16,1952,9999,
+186101,186101000,hallsberg ,,27,0,1778,
+186101,186101000,hallsberg ,,18,1779,9999,
+218403,218403000,hälsingtuna ,,22,0,1761,
+218403,218403000,hälsingtuna ,,21,1762,9999,
+176101,176101000,hammarö ,,27,0,1778,
+176101,176101000,hammarö ,,17,1779,9999,
+231304,231304001,hammerdal ,,22,0,1780,
+231304,231304002,hammerdal ,,22,1781,1786,
+231304,231304003,hammerdal ,,22,1787,1809,
+231304,231304003,hammerdal ,,23,1810,1892,
+218003,218003000,hamrånge ,,22,0,1761,
+218003,218003000,hamrånge ,,21,1762,9999,
+218306,218306000,hanebo ,,22,0,1761,
+218306,218306000,hanebo ,,21,1762,9999,
+56106,56106000,hannäs ,,8,0,1970,
+56106,56106000,hannäs ,,5,1971,9999,
+38206,38206000,harg ,,1,0,1970,
+38206,38206000,harg ,,3,1971,9999,
+213202,213202000,harmånger ,,22,0,1761,
+213202,213202000,harmånger ,,21,1762,9999,
+38133,38133000,härnevi ,,19,0,1970,
+38133,38133000,härnevi ,,3,1971,9999,
+230504,230504000,håsjö ,,22,0,1809,
+230504,230504000,håsjö ,,23,1810,9999,
+213206,213206000,hassela ,,22,0,1761,
+213206,213206000,hassela ,,21,1762,9999,
+13906,13906000,håtuna ,,3,0,1970,
+13906,13906000,håtuna ,,1,1971,9999,
+236105,236105001,hede ,,22,0,1750,
+236105,236105000,hede ,,22,1751,1761,
+236105,236105000,hede ,,21,1762,1809,
+236105,236105000,hede ,,23,1810,9999,
+218004,218004000,hedesunda ,,22,0,1761,
+218004,218004000,hedesunda ,,21,1762,9999,
+188019,188019000,hidinge ,,27,0,1778,
+188019,188019000,hidinge ,,18,1779,9999,
+251803,251803000,hietaniemi ,,24,1617,1809,
+251803,251803000,hietaniemi ,,25,1810,9999,
+218005,218005000,hille ,,22,0,1761,
+218005,218005000,hille ,,21,1762,9999,
+12505,12505000,hilleshög ,,1,0,1785,
+12505,12505000,hilleshög ,,26,1786,1809,
+12505,12505000,hilleshög ,,1,1810,9999,
+156207,156207000,hjärtum ,,14,0,1970,
+156207,156207000,hjärtum ,,15,1971,9999,
+218412,218412000,hög ,,22,0,1761,
+218412,218412000,hög ,,21,1762,9999,
+178404,178404000,högerud ,,27,1646,1778,
+178404,178404000,högerud ,,17,1779,9999,
+38205,38205000,hökhuvud ,,1,0,1970,
+38205,38205000,hökhuvud ,,3,1971,9999,
+176504,176504000,holmedal ,,27,0,1778,
+176504,176504000,holmedal ,,17,1779,9999,
+18110,18110000,hölö ,,4,0,1970,
+18110,18110000,hölö ,,1,1971,9999,
+128616,128616000,hörup ,,11,0,1970,
+128616,128616000,hörup ,,12,1971,9999,
+188013,188013000,hovsta ,,27,0,1778,
+188013,188013000,hovsta ,,18,1779,9999,
+218401,218401000,hudiksvall ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218401,218401000,hudiksvall ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+178500,178508002,huggenäs ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178500,178508002,huggenäs ,Värmlands,17,1779,1969,1779- Värmlands län.
+38037,38037000,husby-långhundra ,Stockholms,1,0,1970,-1970 Stockholms län
+38037,38037000,husby-långhundra ,Uppsala,3,1971,9999,1971- Uppsala län.
+51305,51305000,hycklinge ,Östergötlands,5,0,9999,genom beslut 1982-12-16 överfört Stuverum 1:1 i Tallsebo by samt Vårdslunda 2:8 från Hycklinge i Östergötlands län till Odensvi i Kalmar län.
+218402,218402000,Idenor ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218402,218402000,Idenor ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+128619,128619000,Ingelstorp ,Kristianstads,11,0,1970,-1970 Kristianstads län
+128619,128619000,Ingelstorp ,Malmöhus,12,1971,9999,1971- Malmöhus län.
+131508,131508000,Jälluntofta ,Jönköpings,6,0,1973,-1973 Jönköpings län
+131508,131508000,Jälluntofta ,Hallands,13,1974,9999,1974- Hallands län.
+216107,216107000,Järvsö ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+216107,216107000,Järvsö ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+213203,213203000,Jättendal ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+213203,213203000,Jättendal ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+251002,251002001,Jokkmokk ,Västerbottens,24,1607,1741,-1810 Västerbottens län
+251002,251002002,Jokkmokk ,Västerbottens,24,1742,1809,-1810 Västerbottens län
+251002,251002002,Jokkmokk ,Norrbottens,25,1810,1961,1810-05-21- Norrbottens län.
+258401,258401001,Jukkasjärvi ,Västerbottens,24,1606,1809,-1810 Västerbottens län
+258401,258401001,Jukkasjärvi ,Norrbottens,25,1810,1912,1810-05-21- Norrbottens län.
+232104,232104000,Kall ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232104,232104000,Kall ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+176503,176503000,Karlanda ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176503,176503000,Karlanda ,Värmlands,17,1779,9999,1779- Värmlands län.
+138323,138323000,Karl Gustav ,Älvsborgs,15,0,1970,-1970 Älvsborgs län
+138323,138323000,Karl Gustav ,Hallands,13,1971,9999,1971- Hallands län.
+258304,258304000,Karl Gustav ,Västerbottens,24,1745,1809,-1810 Västerbottens län
+258304,258304000,Karl Gustav ,Norrbottens,25,1810,9999,1810-05-21 - Norrbottens län.
+188301,188301001,Karlskoga ,Närkes,27,0,1629,-1779 Närkes och Värmlands län
+188301,188301002,Karlskoga ,Närkes,27,1630,1778,
+188301,188301002,Karlskoga ,Örebro,18,1779,1882,1779- Örebro län.
+178001,178001002,Karlstads domkyrkoförsamling ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178001,178001002,Karlstads domkyrkoförsamling ,Värmlands,17,1779,1933,1779- Värmlands län.
+178000,178001003,Karlstads landsförsamling ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178000,178001003,Karlstads landsförsamling ,Värmlands,17,1779,1933,1779- Värmlands län.
+188010,188010000,Kil ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188010,188010000,Kil ,Örebro,18,1779,9999,1779- Örebro län.
+178510,178510000,Kila ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178510,178510000,Kila ,Värmlands,17,1779,9999,1779- Värmlands län.
+232607,232607000,Klövsjö ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232607,232607000,Klövsjö ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+188020,188020000,Knista ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188020,188020000,Knista ,Örebro,18,1779,9999,1779- Örebro län.
+38035,38035000,Knivsta ,Stockholms,1,0,1970,-1970 Stockholms län
+38035,38035000,Knivsta ,Uppsala,3,1971,9999,1971- Uppsala län.
+38028,38028000,Knutby ,Stockholms,1,0,1970,-1970 Stockholms län
+38028,38028000,Knutby ,Uppsala,3,1971,9999,1971- Uppsala län.
+173005,173005000,Köla ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+173005,173005000,Köla ,Värmlands,17,1779,9999,1779- Värmlands län.
+178101,178101001,Varnum,Närkes,27,0,1641,
+178101,178101002,Varnum,Närkes,27,1642,1778,-1779 Närkes och Värmlands län
+178101,178101002,Varnum,Värmlands,17,1779,1959,1779- Värmlands län.
+178101,178101003,Kristinehamn ,Närkes,27,1642,1778,-1779 Närkes och Värmlands län
+178101,178101003,Kristinehamn ,Värmlands,17,1779,1959,1779- Värmlands län.
+13903,13903000,Kungsängen ,Uppsala,3,0,1970,-1970 Uppsala län
+13903,13903000,Kungsängen ,Stockholms,1,1971,9999,1971- Stockholms län.
+138324,138324000,Kungsäter ,Älvsborgs,15,0,1970,-1970 Älvsborgs län
+138324,138324000,Kungsäter ,Hallands,13,1971,9999,1971- Hallands län.
+188025,188025000,Kvistbro ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188025,188025000,Kvistbro ,Örebro,18,1779,9999,1779- Örebro län.
+238008,238008000,Kyrkås ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238008,238008000,Kyrkås ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+38032,38032000,Lagga ,Stockholms,1,0,1970,-1970 Stockholms län
+38032,38032000,Lagga ,Uppsala,3,1971,9999,1971- Uppsala län.
+131504,131504000,Långaryd ,Jönköpings,6,0,1973,-1973 Jönköpings län
+131504,131504000,Långaryd ,Hallands,13,1974,9999,1974- Hallands län.
+188003,188003001,Längbro ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188003,188003001,Längbro ,Örebro,18,1779,1953,1779- Örebro län.
+188014,188014000,Lännäs ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188014,188014000,Lännäs ,Orebro,18,1779,9999,1779- Orebro län.
+13902,13902000,Låssa ,Uppsala,3,0,1970,-1970 Uppsala län
+13902,13902000,Låssa ,Stockholms,1,1971,9999,1971- Stockholms län.
+188203,188203000,Lerbäck ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188203,188203000,Lerbäck ,Örebro,18,1779,9999,1779- Örebro län.
+236111,236111000,Lillhärdal ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236111,236111000,Lillhärdal ,Gävleborgs,21,1762,1809,1762-06-29-1810 Gävleborgs län
+236111,236111000,Lillhärdal ,Jämtlands,23,1810,9999,1810-05-07-1869 helt i Jämtlands län
+188029,188029001,Lillkyrka,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188029,188029001,Lillkyrka,Örebro,18,1779,1980,1779- Örebro län.
+188502,188502002,Lindesberg,Närkes,27,0,1623,
+188502,188502003,Lindesberg,Närkes,27,1624,1642,
+188502,188502004,Lindesberg lands,Närkes,27,1643,1778,
+188502,188502004,Lindesberg lands,Örebro,18,1779,1895,
+188502,188502006,Lindesberg stad,Närkes,27,1643,1778,-1779 Närkes och Värmlands län
+188502,188502006,Lindesberg stad,Örebro,18,1779,1966,1779- Örebro län.
+148103,148103000,Lindome ,Hallands,13,0,1970,-1970 Hallands län
+148103,148103000,Lindome ,Bohus,14,1971,9999,1971- Göteborgs och Bohus län.
+236102,236102000,Linsell ,Gävleborgs,21,1798,1809,-1810 Gävleborgs län
+236102,236102000,Linsell ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+238009,238009000,Lit ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238009,238009000,Lit ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+216101,216101001,Ljusdal ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+216101,216101001,Ljusdal ,Gävleborgs,21,1762,1851,1762-06-29- Gävleborgs län.
+186471,186471000,Ljusnarsberg ,Närkes,27,1624,1778,-1779 Närkes och Värmlands län
+186471,186471000,Ljusnarsberg ,Örebro,18,1779,9999,1779- Örebro län
+236106,236106000,Ljusnedal ,Västernorrlands,22,1680,1761,-1762 Västernorrlands län
+236106,236106000,Ljusnedal ,Gävleborgs,21,1762,1809,1762-0629- 1810 Gävleborgs län
+236106,236106000,Ljusnedal ,Jämtlands,23,1810,9999,1810-05-07-Jämtlands län.
+238005,238005000,Lockne ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238005,238005000,Lockne ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+128617,128617000,Löderup ,Kristianstads,11,0,1970,-1970 Kristianstads län
+128617,128617000,Löderup ,Malmöhus,12,1971,9999,1971- Malmöhus län.
+216103,216103001,Los ,Västernorrlands,22,1748,1761,-1762 Västernorrlands län
+216103,216103001,Los ,Gävleborgs,21,1762,1930,1762-06-29-1846 helt i Gävleborgs län
+12504,12504000,Lovö ,Stockholms,1,0,1785,-1786 Stockholms län
+12504,12504000,Lovö ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12504,12504000,Lovö ,Stockholms,1,1810,9999,1810- Stockholms län.
+258001,258001001,Luleå domkyrkoförsamling ,Västerbottens,24,1667,1809,-1810 Västerbottens län
+258001,258001001,Luleå domkyrkoförsamling ,Norrbottens,25,1810,1961,1810-05-21- Norrbottens län.
+176003,176003000,Lungsund ,Närkes,27,1643,1778,-1779 Närkes och Värmlands län
+176003,176003000,Lungsund ,Värmlands,17,1779,9999,1779- Värmlands län.
+176605,176605000,Lysvik ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176605,176605000,Lysvik ,Värmlands,17,1779,9999,1779- Värmlands län.
+241801,241801000,Malå ,Norrbottens,25,1862,1868,-1868 Norrbottens län
+241801,241801000,Malå ,Västerbottens,24,1869,9999,1869- Västerbottens län.
+178410,178410000,Mangskog ,Närkes,27,1705,1778,-1779 Närkes och Värmlands län
+178410,178410000,Mangskog ,Värmlands,17,1779,9999,1779- Värmlands län.
+232107,232107000,Marby ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232107,232107000,Marby ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+238006,238006000,Marieby ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238006,238006000,Marieby ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+232102,232102000,Mattmar ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232102,232102000,Mattmar ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+178506,178506000,Millesvik ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178506,178506000,Millesvik ,Värmlands,17,1779,9999,1779- Värmlands län.
+218207,218207000,Mo ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218207,218207000,Mo ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+18111,18111000,Mörkö ,Södermanlands,4,0,1970,-1970 Södermanlands län
+18111,18111000,Mörkö ,Stockholms,1,1971,9999,1971- Stockholms län.
+232103,232103000,Mörsil ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232103,232103000,Mörsil ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+188005,188005000,Mosjö ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188005,188005000,Mosjö ,Örebro,18,1779,9999,1779- Örebro län.
+12501,12501000,Munsö ,Stockholms,1,0,1785,-1786 Stockholms län
+12501,12501000,Munsö ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12501,12501000,Munsö ,Stockholms,1,1810,9999,1810- Stockholms län.
+232604,232604000,Myssjö ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232604,232604000,Myssjö ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+238004,238004000,Näs ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238004,238004000,Näs ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+188504,188504000,Näsby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188504,188504000,Näsby ,Örebro,18,1779,9999,1779- Örebro län.
+230902,230902000,Näskott ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230902,230902000,Näskott ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+251401,251401001,Nederkalix ,Västerbottens,24,0,1636,
+251401,251401002,Nederkalix ,Västerbottens,24,1637,1809,-1810 Västerbottens län
+251401,251401002,Nederkalix ,Norrbottens,25,1810,1908,1810-05-21- Norrbottens län.
+258003,258003001,Nederluleå ,Västerbottens,24,0,1606,
+258003,258003002,Nederluleå ,Västerbottens,24,1607,1641,
+258003,258003003,Nederluleå ,Västerbottens,24,1642,1666,
+258003,258003004,Nederluleå ,Västerbottens,24,1667,1809,-1810 Västerbottens län
+258003,258003004,Nederluleå ,Norrbottens,25,1810,1830,1810-05-21- Norrbottens län.
+258301,258301001,Nedertorneå,Västerbottens,24,0,1744,-1810 Västerbottens län
+258301,258301000,Nedertorneå-Haparanda ,Västerbottens,24,1745,1809,-1810 Västerbottens län
+258301,258301000,Nedertorneå-Haparanda ,Norrbottens,25,1810,9999,1810-05-21- Norrbottens län.
+176302,176302000,Nedre Ullerud ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176302,176302000,Nedre Ullerud ,Värmlands,17,1779,9999,1779- Värmlands län.
+218405,218405001,Njutånger ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218405,218405001,Njutånger ,Gävleborgs,21,1762,1797,1762-06-29- Gävleborgs län.
+178009,178009000,Nor ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178009,178009000,Nor ,Värmlands,17,1779,9999,1779- Värmlands län.
+188404,188404001,Nora bergsförsamling ,Närkes,27,0,1632,
+188404,188404002,Nora bergsförsamling ,Närkes,27,1633,1639,
+188404,188404003,Nora bergsförsamling ,Närkes,27,1640,1659,
+188404,188404004,Nora bergsförsamling ,Närkes,27,1660,1778,-1779 Närkes och Värmlands län
+188404,188404004,Nora bergsförsamling ,Örebro,18,1779,1870,1779- Örebro län.
+188400,188404006,Nora stadsförsamling ,Närkes,27,1640,1778,-1779 Närkes och Värmlands län
+188400,188404006,Nora stadsförsamling ,Örebro,18,1779,1973,1779- Örebro län.
+238011,238011000,Norderö ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238011,238011000,Norderö ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+240171,240171001,Nordmaling ,Västernorrlands,22,0,1807,
+240171,240171000,Nordmaling ,Västernorrlands,22,1808,1809,-1810 Västernorrlands län
+240171,240171000,Nordmaling ,Västerbottens,24,1810,9999,1810-05-21- Västerbottens län
+178204,178204000,Nordmark ,Närkes,27,1731,1778,-1779 Närkes och Värmlands län
+178204,178204000,Nordmark ,Värmlands,17,1779,9999,1779- Värmlands län.
+168651,168651000,Norra Åsarp ,Älvsborgs,15,0,1973,1891-1973 helt i Älvsborgs län
+168651,168651000,Norra Åsarp ,Skaraborgs,16,1974,9999,1974- Skaraborgs län.
+218209,218209000,Norrala ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218209,218209000,Norrala ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+173709,173709001,Norra Ny ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+173709,173709001,Norra Ny ,Värmlands,17,1779,1872,1779- Värmlands län.
+178304,178304001,Norra Råda ,Närkes,27,0,1652,-1779 Närkes och Värmlands län
+178304,178304002,Norra Råda ,Närkes,27,1653,1778,-1779 Närkes och Värmlands län
+178304,178304002,Norra Råda ,Värmlands,17,1779,1906,1779- Värmlands län.
+126003,126003000,Norra Vram ,Kristianstads,11,0,1889,-1889 huvuddelen i Kristianstads län
+126003,126003000,Norra Vram ,Malmöhus,12,1890,9999,1890helt i Malmöhus län.
+218410,218410000,Norrbo ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218410,218410000,Norrbo ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+188017,188017000,Norrbyås ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188017,188017000,Norrbyås ,Örebro,18,1779,9999,1779- Örebro län.
+178006,178006001,Nyed ,Närkes,27,0,1660,-1779 Närkes och Värmlands län
+178006,178006002,Nyed ,Närkes,27,1661,1778,-1779 Närkes och Värmlands län
+178006,178006002,Nyed ,Värmlands,17,1779,1819,1779- Värmlands län.
+178508,178508001,Södra ny,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178508,178508001,Södra ny,Värmlands,17,1779,1969,1779- Värmlands län.
+186202,186202000,Nysund ,Närkes,27,1638,1778,-1779 Närkes och Värmlands län
+186202,186202000,Nysund ,Värmlands,17,1779,1922,1779-1922 västra delen (med kyrkan) Värmlands län
+186202,186202000,Nysund ,Örebro,18,1923,9999,1923- helt i Örebro län.
+210102,210102001,Ockelbo ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+210102,210102001,Ockelbo ,Gävleborgs,21,1762,1784,176206-29- Gävleborgs län.
+188000,188029002,Ödeby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188000,188029002,Ödeby ,Örebro,18,1779,1980,1779- Örebro län.
+230908,230908000,Offerdal ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230908,230908000,Offerdal ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+178106,178106000,Ölme ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178106,178106000,Ölme ,Värmlands,17,1779,9999,1779- Värmlands län.
+178505,178505000,Ölserud ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178505,178505000,Ölserud ,Värmlands,17,1779,9999,1779- Värmlands län.
+188001,188001001,Örebro Nikolai ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188001,188001001,Örebro Nikolai ,Örebro,18,1779,1912,1779- Örebro län.
+38207,38207000,Öregrund ,Stockholms,1,0,1970,-1970 Stockholms län
+38207,38207000,Öregrund ,Uppsala,3,1971,9999,1971- Uppsala län.
+218105,218105000,Österfärnebo ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218105,218105000,Österfärnebo ,Gävleborgs,21,1762,9999,176206-29- Gävleborgs län (huvuddelen)
+38135,38135000,Österunda ,Västmanlands,19,0,1970,-1970 Västmanlands län
+38135,38135000,Österunda ,Uppsala,3,1971,9999,1971- Uppsala län.
+176509,176509000,Östervallskog ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176509,176509000,Östervallskog ,Värmlands,17,1779,9999,1779- Värmlands län.
+38201,38201000,Östhammar ,Stockholms,1,0,1970,-1970 Stockholms län
+38201,38201000,Östhammar ,Uppsala,3,1971,9999,1971- Uppsala län.
+173705,173705001,Östmark ,Närkes,27,1765,1778,-1779 Närkes och Värmlands län
+173705,173705001,Östmark ,Värmlands,17,1779,1850,1779- Värmlands län.
+176603,176603001,Östra Ämtervik ,Närkes,27,0,1673,-1779 Närkes och Värmlands län
+176603,176603000,Östra Ämtervik ,Närkes,27,1674,1778,-1779 Närkes och Värmlands län
+176603,176603000,Östra Ämtervik ,Värmlands,17,1779,9999,1779- Värmlands län.
+56306,56306000,Östra Ed ,Kalmar,8,0,1970,-1970 Kalmar län
+56306,56306000,Östra Ed ,Östergötlands,5,1971,9999,1971- Östergötlands län.
+178003,178003000,Östra Fågelvik ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178003,178003000,Östra Fågelvik ,Värmlands,17,1779,9999,1779-Värmlands län.
+116807,116807000,Östra Karup ,Hallands,13,0,1970,-1970 Hallands län
+116807,116807000,Östra Karup ,Kristianstads,11,1971,9999,1971- Kristianstads län.
+38036,38036000,Östuna ,Stockholms,1,0,1970,-1970 Stockholms län
+38036,38036000,Östuna ,Uppsala,3,1971,9999,1971- Uppsala län.
+212101,212101001,Ovanåker ,Västernorrlands,22,1639,1758,-1762 Västernorrlands län
+212101,212101000,Ovanåker ,Västernorrlands,22,1759,1761,-1762 Västernorrlands län
+212101,212101000,Ovanåker ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+218102,218102001,Ovansjö ,Västernorrlands,22,0,1621,-1762 Västernorrlands län
+218102,218102002,Ovansjö ,Västernorrlands,22,1622,1761,-1762 Västernorrlands län
+218102,218102002,Ovansjö ,Gävleborgs,21,1762,1861,1762-06-29- Gävleborgs län.
+236108,236108000,Överhogdal ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236108,236108000,Överhogdal ,Gävleborgs,21,1762,1809,1762- 06-29-1810 Gävleborgs län
+236108,236108000,Överhogdal ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+251301,251301000,Överkalix ,Västerbottens,24,1637,1809,-1810 Västerbottens län
+251301,251301000,Överkalix ,Norrbottens,25,1810,9999,1810-05-21 - Norrbottens län.
+251801,251801001,Övertorneå ,Västerbottens,24,0,1601,-1810 Västerbottens län
+251801,251801002,Övertorneå ,Västerbottens,24,1602,1616,-1810 Västerbottens län
+251801,251801003,Övertorneå ,Västerbottens,24,1617,1724,-1810 Västerbottens län
+251801,251801004,Övertorneå ,Västerbottens,24,1725,1809,-1810 Västerbottens län
+251801,251801004,Övertorneå ,Norrbottens,25,1810,1855,1810-05-21- Norrbottens län.
+232603,232603000,Oviken ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232603,232603000,Oviken ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+176303,176303001,Övre Ullerud ,Närkes,27,0,1669,-1779 Närkes och Värmlands län
+176303,176303000,Övre Ullerud ,Närkes,27,1670,1778,-1779 Närkes och Värmlands län
+176303,176303000,Övre Ullerud ,Värmlands,17,1779,9999,1779- Värmlands län.
+252101,252101001,Pajala ,Västerbottens,24,1725,1809,-1810 Västerbottens län
+252101,252101001,Pajala ,Norrbottens,25,1810,1853,1810-05-21- Norrbottens län.
+258171,258171001,Piteå,Västerbottens,24,0,1605,-1810 Västerbottens län
+258171,258171002,Piteå,Västerbottens,24,1606,1685,-1810 Västerbottens län
+258171,258171003,Piteå landsförsamling ,Västerbottens,24,1686,1808,-1810 Västerbottens län
+258171,258171004,Piteå landsförsamling ,Västerbottens,24,1809,1809,-1810 Västerbottens län
+258171,258171004,Piteå landsförsamling ,Norrbottens,25,1810,1914,181005-21- Norrbottens län.
+258101,258101000,Piteå stadsförsamling ,Västerbottens,24,1686,1809,- 1810 Västerbottens län
+258101,258101000,Piteå stadsförsamling ,Norrbottens,25,1810,9999,1810-05-21 - Norrbottens län.
+230301,230301000,Ragunda ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230301,230301000,Ragunda ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+178207,178207000,Rämmen ,Närkes,27,1777,1778,-1779 Närkes och Värmlands län
+178207,178207000,Rämmen ,Värmlands,17,1779,9999,1779- Värmlands län
+116003,116003000,Ramsåsa ,Malmöhus,12,0,1951,-1951 Malmöhus län
+116003,116003000,Ramsåsa ,Kristianstads,11,1952,9999,1952- Kristianstads län.
+188507,188507000,Ramsberg ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188507,188507000,Ramsberg ,Örebro,18,1779,9999,1779- Örebro län
+186001,186001001,Ramundeboda ,Närkes,27,0,1629,
+186001,186001000,Ramundeboda ,Närkes,27,1630,1778,-1779 Närkes och Värmlands län
+186001,186001000,Ramundeboda ,Örebro,18,1779,9999,1779- Örebro län.
+258004,258004001,Råneå ,Västerbottens,24,1642,1809,-1810 Västerbottens län
+258004,258004001,Råneå ,Norrbottens,25,1810,1961,1810-05-21- Norrbottens län.
+176201,176201001,Ransäter ,Närkes,27,1670,1778,-1779 Närkes och Värmlands län
+176201,176201001,Ransäter ,Värmlands,17,1779,1917,1779- Värmlands län.
+232608,232608000,Rätan ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232608,232608000,Rätan ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län
+218304,218304000,Rengsjö ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218304,218304000,Rengsjö ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+230506,230506001,Revsund ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230506,230506001,Revsund ,Jämtlands,23,1810,1850,1810-05-07- Jämtlands län.
+230901,230901000,Rödön ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230901,230901000,Rödön ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+218404,218404000,Rogsta ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218404,218404000,Rogsta ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+178103,178103001,Rudskoga ,Närkes,27,0,1637,-1779 Närkes och Värmlands län
+178103,178103000,Rudskoga ,Närkes,27,1638,1778,-1779 Närkes och Värmlands län
+178103,178103000,Rudskoga ,Värmlands,17,1779,9999,1779-1834 huvuddelen i Värmlands län
+218101,218101000,Sandviken ,Västernorrlands,22,1622,1761,-1762 Västernorrlands län
+218101,218101000,Sandviken ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+12507,12507000,Sånga ,Stockholms,1,0,1785,-1786 Stockholms län
+12507,12507000,Sånga ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12507,12507000,Sånga ,Stockholms,1,1810,9999,1810- Stockholms län.
+218305,218305000,Segersta ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218305,218305000,Segersta ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+176501,176501000,Silbodal ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176501,176501000,Silbodal ,Värmlands,17,1779,9999,1779- Värmlands län.
+176502,176502000,Sillerud ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176502,176502000,Sillerud ,Värmlands,17,1779,9999,1779- Värmlands län
+38131,38131000,Simtuna ,Västmanlands,19,0,1970,-1970 Västmanlands län
+38131,38131000,Simtuna ,Uppsala,3,1971,9999,1-971- Uppsala län.
+12506,12506000,Skå ,Stockholms,1,0,1785,-1786 Stockholms län
+12506,12506000,Skå ,Svartsjö,26,1786,1809,1786-1810 Svartsjö län
+12506,12506000,Skå ,Stockholms,1,1810,9999,1810- Stockholms län.
+186004,186004000,Skagershult ,Närkes,27,1647,1778,-1779 Närkes och Värmlands län
+186004,186004000,Skagershult ,Örebro,18,1779,9999,1779- Örebro län.
+173004,173004000,Skillingmark ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+173004,173004000,Skillingmark ,Värmlands,17,1779,9999,1779- Värmlands län.
+218203,218203001,Skog ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218203,218203001,Skog ,Gävleborgs,21,1762,1916,1762-06-29- Gävleborgs län.
+186104,186104000,Sköllersta ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+186104,186104000,Sköllersta ,Örebro,18,1779,9999,1779Örebro län.
+168652,168652000,Smula ,Älvsborgs,15,0,1973,1891-1973 helt i Älvsborgs län
+168652,168652000,Smula ,Skaraborgs,16,1974,9999,1974- Skaraborgs län.
+188204,188204000,Snavlunda ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188204,188204000,Snavlunda ,Örebro,18,1779,9999,1779- Örebro län.
+218205,218205001,Söderala ,Västernorrlands,22,0,1619,-1762 Västernorrlands län
+218205,218205002,Söderala ,Västernorrlands,22,1620,1761,-1762 Västernorrlands län
+218205,218205002,Söderala ,Gävleborgs,21,1762,1827,1762-06-29- Gävleborgs län.
+218201,218201001,Söderhamn ,Västernorrlands,22,1620,1761,-1762 Västernorrlands län
+218201,218201001,Söderhamn ,Gävleborgs,21,1762,1916,1762-06-29- Gävleborgs län.
+164303,164303000,Södra Råda ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+164303,164303000,Södra Råda ,Värmlands,17,1779,1970,1779-1970 Värmlands län
+164303,164303000,Södra Råda ,Skaraborgs,16,1971,9999,1971- Skaraborgs län.
+131507,131507000,Södra Unnaryd ,Jönköpings,6,0,1973,-1973 Jönköpings län
+131507,131507000,Södra Unnaryd ,Hallands,13,1974,9999,1974- Hallands län.
+168650,168650000,Solberga ,Älvsborgs,15,0,1973,-1973 Älvsborgs län
+168650,168650000,Solberga ,Skaraborgs,16,1974,9999,1974- Skaraborgs län.
+178403,178403001,Stavnäs ,Närkes,27,0,1645,-1779 Närkes och Värmlands län
+178403,178403000,Stavnäs ,Närkes,27,1646,1778,-1779 Närkes och Värmlands län
+178403,178403000,Stavnäs ,Värmlands,17,1779,9999,1779- Värmlands län.
+121404,121404000,Stenestad ,Kristianstads,11,0,1951,-1951 Kristianstads län
+121404,121404000,Stenestad ,Malmöhus,12,1952,9999,1952- Malmöhus län.
+171501,171501000,Stora Kil ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+171501,171501000,Stora Kil ,Värmlands,17,1779,9999,1779- Värmlands län.
+188016,188016000,Stora Mellösa ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188016,188016000,Stora Mellösa ,Örebro,18,1779,9999,1779- Örebro län.
+231301,231301001,Ström ,Västernorrlands,22,0,1807,-1810 Västernorrlands län
+231301,231301000,Ström ,Västernorrlands,22,1808,1809,-1810 Västernorrlands län
+231301,231301000,Ström ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län
+230304,230304000,Stugun ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230304,230304000,Stugun ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+230505,230505000,Sundsjö ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+230505,230505000,Sundsjö ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+176601,176601001,Sunne ,Närkes,27,0,1750,-1779 Närkes och Värmlands län
+176601,176601000,Sunne ,Närkes,27,1751,1778,-1779 Närkes och Värmlands län
+176601,176601000,Sunne ,Värmlands,17,1779,9999,1779- Värmlands län.
+238003,238003000,Sunne ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+238003,238003000,Sunne ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+178305,178305000,Sunnemo ,Närkes,27,1653,1778,-1779 Närkes och Värmlands län
+178305,178305000,Sunnemo ,Värmlands,17,1779,9999,1779- Värmlands län.
+178511,178511000,Svanskog ,Närkes,27,0,1778,-1779 huvuddelen Närkes och Värmlands län
+178511,178511000,Svanskog ,Värmlands,17,1779,9999,1779-1890 huvuddelen Värmlands län
+236101,236101001,Sveg ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236101,236101001,Sveg ,Gävleborgs,21,1762,1797,1762-06-29-1810 Gävleborgs län
+236101,236101000,Sveg ,Gävleborgs,21,1798,1809,1762-06-29-1810 Gävleborgs län
+236101,236101000,Sveg ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län
+186105,186105001,Svennevad ,Närkes,27,0,1734,-1779 Närkes och Värmlands län
+186105,186105000,Svennevad ,Närkes,27,1735,1778,-1779 Närkes och Värmlands län
+186105,186105000,Svennevad ,Örebro,18,1779,9999,1779- Örebro län.
+188006,188006000,Täby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188006,188006000,Täby ,Örebro,18,1779,9999,1779- Örebro län.
+188024,188024001,Tångeråsa ,Närkes,27,0,1646,-1779 Närkes och Värmlands län
+188024,188024000,Tångeråsa ,Närkes,27,1647,1778,-1779 Närkes och Värmlands län
+188024,188024000,Tångeråsa ,Örebro,18,1779,9999,1779- Örebro län.
+78119,78119000,Tannåker ,Jönköpings,6,0,1970,-1970 Jönköpings län
+78119,78119000,Tannåker ,Kronobergs,7,1971,9999,1971- Kronobergs län.
+236107,236107001,Tännäs ,Västernorrlands,22,0,1679,-1762 Västernorrlands län
+236107,236107000,Tännäs ,Västernorrlands,22,1680,1761,-1762 Västernorrlands län
+236107,236107000,Tännäs ,Gävleborgs,21,1762,1809,1762-06-29-1810 Gävleborgs län
+236107,236107000,Tännäs ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+231308,231308000,Tåsjö ,Västernorrlands,22,1772,1973,1864-1973 helt i Västernorrlands län
+231308,231308000,Tåsjö ,Jämtlands,23,1974,9999,1974- Jämtlands län.
+18109,18109000,Taxinge ,Södermanlands,4,0,1970,-1970 Södermanlands län
+18109,18109000,Taxinge ,Stockholms,1,1971,9999,1971- Stockholms län.
+186003,186003000,Tived ,Skaraborgs,16,1842,1966,-1966 Skaraborgs län
+186003,186003000,Tived ,Örebro,18,1967,9999,1967- Örebro län.
+126708,126708000,Tjörnarp ,Kristianstads,11,0,1968,förr huvuddelen i Kristianstads län och del (Karlarp
+126708,126708000,Tjörnarp ,Malmöhus,12,1969,9999,1969- Malmöhus län.
+176508,176508000,Töcksmark ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176508,176508000,Töcksmark ,Värmlands,17,1779,9999,1779- Värmlands län.
+210402,210402001,Torsåker ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+210402,210402001,Torsåker ,Gävleborgs,21,1762,1910,1762-06-29- Gävleborgs län.
+38134,38134000,Torstuna ,Västmanlands,19,0,1970,-1970 Västmanlands län
+38134,38134000,Torstuna ,Uppsala,3,1971,9999,1971- Uppsala län.
+116007,116007000,Tranås ,Malmöhus,12,0,1890,-1890 Malmöhus län
+116007,116007000,Tranås ,Kristianstads,11,1891,9999,1891- Kristianstads län.
+176506,176506000,Trankil ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176506,176506000,Trankil ,Värmlands,17,1779,9999,1779- Värmlands län.
+218208,218208000,Trönö ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218208,218208000,Trönö ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+213205,213205000,Bergsjö,,22,0,1761,
+213205,213205000,Bergsjö,,21,1762,9999,
+218408,218408000,Delsbo,,22,0,1761,
+218408,218408000,Delsbo,,21,1762,9999,
+56305,56305000,Tryserum ,Kalmar,8,0,1970,Tryserums församling -1970 Kalmar län
+56305,56305000,Tryserum ,Östergötlands,5,1971,9999,1971- Östergötlands län.
+178502,178502000,Tveta ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178502,178502000,Tveta ,Värmlands,17,1779,9999,1779- Värmlands län.
+188008,188008000,Tysslinge ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188008,188008000,Tysslinge ,Örebro,18,1779,9999,1779- Örebro län.
+232105,232105000,Undersåker ,Västernorrlands,22,0,1809,-1810 Västernorrlands län
+232105,232105000,Undersåker ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län (tidvis viss del i Kopparbergs län).
+218308,218308000,Undersvik ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218308,218308000,Undersvik ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län.
+232605,232605000,Storsjö,Västernorrlands,22,1751,1761,-1762 Västernorrlands län
+232605,232605000,Storsjö,Gävleborgs,21,1762,1809,1762-06-29-1810 Gävleborgs län
+232605,232605000,Storsjö,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+218006,218006000,Valbo ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+218006,218006000,Valbo ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län
+143003,143003000,Valbo-Ryr ,Älvsborgs,15,0,1966,-1966 Älvsborgs län
+143003,143003000,Valbo-Ryr ,Bohus,14,1967,9999,1967- Göteborgs och Bohus län.
+128618,128618000,Valleberga ,Kristianstads,11,0,1970,-1970 Kristianstads län
+128618,128618000,Valleberga ,Malmöhus,12,1971,9999,1971- Malmöhus län.
+38203,38203000,Valö ,Stockholms,1,1612,1970,-1970 Stockholms län
+38203,38203000,Valö ,Uppsala,3,1971,9999,1971- Uppsala län.
+158007,158007000,Vänersnäs ,Skaraborgs,16,0,1951,-1951 Skaraborgs län
+158007,158007000,Vänersnäs ,Älvsborgs,15,1952,9999,1952- Älvsborgs län.
+176404,176404000,Värmskog ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176404,176404000,Värmskog ,Värmlands,17,1779,9999,1779- Värmlands län.
+213201,213201000,,,22,0,1761,
+213201,213201000,,,21,1762,9999,
+178302,178302001,,,27,0,1778,
+178302,178302001,,,17,1779,1788,
+178004,178004000,Väse ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178004,178004000,Väse ,Värmlands,17,1779,9999,1779- Värmlands län.
+38034,38034000,Vassunda ,Stockholms,1,0,1970,-1970 Stockholms län
+38034,38034000,Vassunda ,Uppsala,3,1971,9999,1971- Uppsala län.
+,,,,,,,
+156206,156206000,Västerlanda ,Bohus,14,0,1970,-1970 Göteborgs och Bohus län
+156206,156206000,Västerlanda ,Älvsborgs,15,1971,9999,1971- Älvsborgs län.
+176602,176602000,Västra Ämtervik ,Närkes,27,1674,1778,-1779 Närkes och Värmlands län
+176602,176602000,Västra Ämtervik ,Värmlands,17,1779,9999,1779- Värmlands län.
+178206,178206001,,,27,1624,1642,
+178206,178206002,,,27,1643,1778,
+178206,178206002,,,17,1779,1959,
+178408,178408000,,,27,0,1778,
+178408,178408000,,,17,1779,9999,
+176507,176507000,Västra Fågelvik ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+176507,176507000,Västra Fågelvik ,Värmlands,17,1779,9999,1779Värmlands län.
+173003,173003000,,,27,0,1778,
+173003,173003000,,,17,1779,9999,
+,,,,,,,
+13904,13904000,Västra Ryd ,Uppsala,3,0,1970,-1970 Uppsala län
+13904,13904000,Västra Ryd ,Stockholms,1,1971,9999,1971- Stockholms län.
+178512,178512000,,,27,0,1778,
+178512,178512000,,,17,1779,9999,
+178509,178509000,,,27,0,1778,
+178509,178509000,,,17,1779,9999,
+176401,176401001,,,27,0,1715,
+176401,176401000,,,27,1716,1778,
+176401,176401000,,,17,1779,9999,
+178010,178010000,,,27,0,1778,
+178010,178010000,,,17,1779,9999,
+178501,178501001,,,27,0,1778,
+178501,178501001,,,17,1779,1942,
+236104,236104000,Vemdalen ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236104,236104000,Vemdalen ,Gävleborgs,21,1762,1809,1762-06-29-1810 Gävleborgs län
+236104,236104000,Vemdalen ,Jämtlands,23,1810,9999,1810-05-07- Jämtlands län.
+186102,186102000,Viby ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+186102,186102000,Viby ,Örebro,18,1779,9999,1779- Örebro län.
+188007,188007000,Vintrosa ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+188007,188007000,Vintrosa ,Örebro,18,1779,9999,1779- Örebro län.
+188101,188101000,Kumla,,27,0,1778,
+188101,188101000,Kumla,,18,1779,9999,
+186302,186302001,,,27,1633,1643,
+186302,186302000,,,27,1644,1778,
+186302,186302000,,,18,1779,9999,
+178105,178105000,Visnum ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178105,178105000,Visnum ,Värmlands,17,1779,9999,1779- Värmlands län.
+178104,178104000,Visnums-Kil ,Närkes,27,0,1778,-1779 Närkes och Värmlands län
+178104,178104000,Visnums-Kil ,Värmlands,17,1779,9999,1779- Värmlands län.
+186303,186303000,,,27,1640,1778,
+186303,186303000,,,18,1779,9999,
+188021,188021000,,,27,0,1778,
+188021,188021000,,,18,1779,9999,
+212102,212102000,Voxna ,Västernorrlands,22,1759,1761,-1762 Västernorrlands län
+212102,212102000,Voxna ,Gävleborgs,21,1762,9999,1762-06-29- Gävleborgs län
+236109,236109001,Ytterhogdal ,Västernorrlands,22,0,1761,-1762 Västernorrlands län
+236109,236109001,Ytterhogdal ,Gävleborgs,21,1762,1863,1762-06-29-1863 Gävleborgs län
+236109,236109001,Ytterhogdal ,Jämtlands,23,1864,1924,1864-Jämtlands län
+188026,188026000,,,27,0,1778,
+188026,188026000,,,18,1779,9999,
+188102,188102000,,,27,0,1778,
+188102,188102000,,,18,1779,9999,
+188205,188205000,,,27,0,1778,
+188205,188205000,,,18,1779,9999,
+188403,188403000,,,27,1660,1778,
+188403,188403000,,,18,1779,9999,
+88513,88513000,,,8,0,1818,
+88513,88513000,,,28,1819,1826,
+88513,88513000,,,8,1827,9999,
+88514,88514000,,,8,0,1818,
+88514,88514000,,,28,1819,1826,
+88514,88514000,,,8,1827,9999,
+88515,88515000,,,8,0,1818,
+88515,88515000,,,28,1819,1826,
+88515,88515000,,,8,1827,9999,
+88516,88516000,,,8,0,1818,
+88516,88516000,,,28,1819,1826,
+88516,88516000,,,8,1827,9999,
+88502,88502000,,,8,0,1818,
+88502,88502000,,,28,1819,1826,
+88502,88502000,,,8,1827,9999,
+88504,88504000,,,8,0,1818,
+88504,88504000,,,28,1819,1826,
+88504,88504000,,,8,1827,9999,
+88507,88507000,,,8,0,1818,
+88507,88507000,,,28,1819,1826,
+88507,88507000,,,8,1827,9999,
+88505,88505000,,,8,0,1818,
+88505,88505000,,,28,1819,1826,
+88505,88505000,,,8,1827,9999,
+88506,88506000,,,8,0,1818,
+88506,88506000,,,28,1819,1826,
+88506,88506000,,,8,1827,9999,
+88501,88501000,,,8,1777,1818,
+88501,88501000,,,28,1819,1826,
+88501,88501000,,,8,1827,9999,
+88508,88508000,,,8,1777,1818,
+88508,88508000,,,28,1819,1826,
+88508,88508000,,,8,1827,9999,
+88510,88510000,,,8,0,1818,
+88510,88510000,,,28,1819,1826,
+88510,88510000,,,8,1827,9999,
+88509,88509000,,,8,0,1818,
+88509,88509000,,,28,1819,1826,
+88509,88509000,,,8,1827,9999,
+88511,88511000,,,8,0,1818,
+88511,88511000,,,28,1819,1826,
+88511,88511000,,,8,1827,9999,
+84013,84013000,,,8,0,1818,
+84013,84013000,,,28,1819,1826,
+84013,84013000,,,8,1827,9999,
+88512,88512000,,,8,0,1818,
+88512,88512000,,,28,1819,1826,
+88512,88512000,,,8,1827,9999,
+84014,84014000,,,8,0,1818,
+84014,84014000,,,28,1819,1826,
+84014,84014000,,,8,1827,9999,
+84016,84016000,,,8,0,1818,
+84016,84016000,,,28,1819,1826,
+84016,84016000,,,8,1827,9999,
+84015,84015000,,,8,0,1818,
+84015,84015000,,,28,1819,1826,
+84015,84015000,,,8,1827,9999,
+84017,84017000,,,8,0,1818,
+84017,84017000,,,28,1819,1826,
+84017,84017000,,,8,1827,9999,
+84018,84018000,,,8,0,1818,
+84018,84018000,,,28,1819,1826,
+84018,84018000,,,8,1827,9999,
+84001,84001000,,,8,0,1818,
+84001,84001000,,,28,1819,1826,
+84001,84001000,,,8,1827,9999,
+84002,84002000,,,8,0,1818,
+84002,84002000,,,28,1819,1826,
+84002,84002000,,,8,1827,9999,
+84003,84003000,,,8,0,1818,
+84003,84003000,,,28,1819,1826,
+84003,84003000,,,8,1827,9999,
+84004,84004000,,,8,0,1818,
+84004,84004000,,,28,1819,1826,
+84004,84004000,,,8,1827,9999,
+84006,84006000,,,8,0,1818,
+84006,84006000,,,28,1819,1826,
+84006,84006000,,,8,1827,9999,
+84005,84005000,,,8,0,1818,
+84005,84005000,,,28,1819,1826,
+84005,84005000,,,8,1827,9999,
+84007,84007000,,,8,0,1818,
+84007,84007000,,,28,1819,1826,
+84007,84007000,,,8,1827,9999,
+84008,84008000,,,8,0,1818,
+84008,84008000,,,28,1819,1826,
+84008,84008000,,,8,1827,9999,
+84008,84009000,,,8,0,1818,
+84009,84009000,,,28,1819,1826,
+84009,84009000,,,8,1827,9999,
+84009,84010000,,,8,0,1818,
+84010,84010000,,,28,1819,1826,
+84010,84010000,,,8,1827,9999,
+84011,84011000,,,8,0,1818,
+84011,84011000,,,28,1819,1826,
+84011,84011000,,,8,1827,9999,
+84012,84012000,,,8,0,1818,
+84012,84012000,,,28,1819,1826,
+84012,84012000,,,8,1827,9999,
+88503,88503000,,,8,0,1818,
+88503,88503000,,,28,1819,1826,
+88503,88503000,,,8,1827,9999,
+18021,18021003,,,2,1931,1956,
+18029,18029000,,,2,1955,1967,
+18029,18029000,,,1,1968,9999,
+18034,18034001,,,2,1931,1956,
+18013,18013002,,,1,1654,1714,
+18013,18013002,,,2,1715,1924,
+18004,18004000,,,2,1907,1967,
+18004,18004000,,,1,1968,9999,
+18014,18014000,,,2,1925,1967,
+18014,18014000,,,1,1968,9999,
+18005,18005000,,,2,1906,1967,
+18005,18005000,,,1,1968,9999,
+18015,18015000,,,2,1917,1967,
+18015,18015000,,,1,1968,9999,
+18021,18021002,,,1,1640,1714,
+18021,18021002,,,2,1715,1930,
+18009,18009000,,,2,1906,1967,
+18009,18009000,,,1,1968,9999,
+18034,18034000,,,2,1957,1967,
+18034,18034000,,,1,1968,9999,
+18006,18006000,,,2,1906,1967,
+18006,18006000,,,1,1968,9999,
+18018,18018001,,,1,1671,1714,
+18018,18018001,,,2,1715,1924,
+18038,18038000,,,2,1962,1967,
+18038,18038000,,,1,1968,9999,
+18010,18010000,,,2,1906,1967,
+18010,18010000,,,1,1968,9999,
+18027,18027001,,,1,0,1714,
+18027,18027001,,,2,1715,1908,
+18017,18017000,,,2,1917,1967,
+18017,18017000,,,1,1968,9999,
+18023,18023000,,,2,1957,1967,
+18023,18023000,,,1,1968,9999,
+18015,18015001,,,1,1654,1714,
+18015,18015001,,,2,1715,1916,
+18010,18010001,,,1,0,1714,
+18010,18010001,,,2,1715,1905,
+18019,18019000,,,2,1925,1967,
+18019,18019000,,,1,1968,9999,
+18027,18027002,,,2,1909,1954,
+18041,18041002,,,2,1962,1967,
+18041,18041002,,,1,1968,1973,
+18041,18041001,,,1,0,1714,
+18041,18041001,,,2,1715,1961,
+18039,18039001,,,2,1957,1967,
+18039,18039001,,,1,1968,1968,
+18025,18025000,,,2,1957,1967,
+18025,18025000,,,1,1968,9999,
+18036,18036000,,,2,1957,1967,
+18036,18036000,,,1,1968,9999,
+18013,18013000,,,2,1925,1967,
+18013,18013000,,,1,1968,9999,
+18018,18018000,,,2,1925,1967,
+18018,18018000,,,1,1968,9999,
+18005,18005001,,,1,1675,1714,
+18005,18005001,,,2,1715,1905,
+18001,18001004,,,1,1675,1714,
+18001,18001004,,,2,1715,1906,
+18027,18027000,,,2,1955,1967,
+18027,18027000,,,1,1968,9999,
+18021,18021000,,,2,1957,1967,
+18021,18021000,,,1,1968,9999,
+18011,18011000,,,2,1906,1967,
+18011,18011000,,,1,1968,9999,
+18007,18007000,,,2,1906,1967,
+18007,18007000,,,1,1968,9999,
+18001,18001000,,,2,1907,1967,
+18001,18001000,,,1,1968,9999,
+18028,18028000,,,2,1955,1967,
+18028,18028000,,,1,1968,9999,
