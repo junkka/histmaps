@@ -54,4 +54,19 @@ NULL
 #' @source Based on parish borders from Riksarkivet.
 NULL
 
+#' @name parish_relations
+#' @title Parish geographical relatives
+#' @description Parish relations, succeeding and preceding parish.
+#' @docType data
+#' @usage data(parish_relations)
+#' @format A \code{data.frame} with 2563 rows and 4 columns
+#' \describe{
+#'   \item{nadkod}{Parish code}
+#'   \item{nadkod2}{Parish relative}
+#'   \item{year}{Year of change}
+#'   \item{relation}{Type of relation "pre" or "succ"}
+#' }
+NULL
+
+
 

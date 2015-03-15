@@ -1,2 +1,5 @@
 ^data-raw$
 ^inst/sources$
+^README.Rmd$
+^db_config.R$
+^README_files

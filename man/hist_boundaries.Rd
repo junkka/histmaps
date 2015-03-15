@@ -8,12 +8,12 @@ hist_boundaries(date, type = c("parish", "county"), format = c("sp", "df",
   "meta"))
 }
 \arguments{
-\item{date}{a date or a year}
+\item{date}{a date, a year or a date/year range}
 
 \item{type}{type of unit, "county" or "municipal"}
 
-\item{format}{format of return object, "df" for data.frame and "sp" for
-SpatialPolygonsDataFrame}
+\item{format}{format of return object, "df" for data.frame, "sp" for
+SpatialPolygonsDataFrame and "meta" for only meta-data.}
 }
 \description{
 Get swedish administrative boundaries for a specified year.
