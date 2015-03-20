@@ -26,3 +26,19 @@ create_block <- function(x, y) {
   }
   return(new)
 } 
+
+
+#' Create ggplot map data.frame from NAD sp
+#'
+#' @param sp a SparialPolygonsDataFrame object
+#' @importFrom ggplot2 fortify
+#' @export
+
+sp_to_ggplot <- function(sp){
+  
+  sp@data$id = rownames(sp@data)
+  ret_d = ggplot2::fortify(sp, region="id")
+  ret_d = left_join(ret_d, sp@data, by="id")
+  # save(ret_d, file='data/nad_ggolot.RData')
+  return(ret_d)
+}

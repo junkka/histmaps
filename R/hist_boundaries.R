@@ -1,17 +1,17 @@
-# swe_boundries.R
+# hist_boundries.R
 
-#' Swe Boundaries
+#' Historical boundaries
 #'
-#' Get swedish administrative boundaries for a specified year.
+#' Get Swedish administrative boundaries of parishes or counties 
+#'   for a specified year 1600-1990.
 #'
 #' @param date a date, a year or a date/year range
-#' @param type type of unit, "county" or "municipal"
+#' @param type type of unit, "parish" or "county"
 #' @param format format of return object, "df" for data.frame, "sp" for 
 #'   SpatialPolygonsDataFrame and "meta" for only meta-data.
 #' @export
 #' @import dplyr
 #' @import sp
-#' @import sweboundaries
 #' @import assertthat
 #' @import maptools
 #' @examples
@@ -19,10 +19,16 @@
 #' library(sp)
 #' plot(map)
 #' 
+#' period_map <- hist_boundaries(c(1800, 1900))
+#' plot(period_map$map)
+#' 
 
 hist_boundaries <- function(date, 
     type = c("parish", "county"), 
     format = c("sp", "df", "meta")) {
+
+  type <- match.arg(type)
+  format <- match.arg(format)
 
   if (length(date) == 1){
     x <- get_year(date)
@@ -33,6 +39,7 @@ hist_boundaries <- function(date,
     y <- get_year(date[1])
     x <- get_year(date[2])
     assert_that(y <= x, msg = "Range start must be before end")
+    assert_that(type == "parish", msg = "Range map only possible for parish")
     # set period to TRUE
     period <- TRUE
   }
@@ -40,9 +47,6 @@ hist_boundaries <- function(date,
   if (x > 1990 || x < 1600 || y > 1990 || y < 1600 )
     stop("Date must be between 1600-01-01 and 1990-12-31")
   
-  # env <- environment()
-  type <- match.arg(type)
-  format <- match.arg(format)
 
   if (type == "county"){
     res <- subset(hist_county, from <= x & tom >= y)
@@ -50,10 +54,12 @@ hist_boundaries <- function(date,
   if (type == "parish") {
     res <- subset(hist_parish, from <= x & tom >= y)
     # add county
-    slot(res, "data") <- par_to_county %>% 
-      filter(from <= x, tom >= y) %>% 
-      select(nadkod, county) %>% 
-      left_join(slot(res, "data"), ., by = "nadkod")
+    if (!period){
+      slot(res, "data") <- par_to_county %>% 
+        filter(from <= x, tom >= y) %>% 
+        select(nadkod, county) %>% 
+        left_join(slot(res, "data"), ., by = "nadkod")
+    }
   }
 
   if (period) {
@@ -62,14 +68,14 @@ hist_boundaries <- function(date,
     res <- get_period_map(res, ids)
     return(list(map = switch(format,
         sp = res,
-        df = sweboundaries::sp_to_ggplot(res),
+        df = sp_to_ggplot(res),
         meta = res@data
       ), lookup = ids))
   }
 
   return(switch(format,
     sp = res,
-    df = sweboundaries::sp_to_ggplot(res),
+    df = sp_to_ggplot(res),
     meta = res@data
   ))
 }

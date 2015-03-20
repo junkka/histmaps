@@ -1,7 +1,7 @@
 Encoding: UTF-8
 Package: histmaps
 Title: Swedish historical administrative maps
-Version: 0.2
+Version: 0.2.3
 Authors@R: "Johan Junkka <johan.junkka@gmail.com> [aut, cre]"
 Description: A R data package of Swedish historical administrative boundaries for
   parishes and counties 1600-1990
@@ -10,12 +10,14 @@ License: MIT + file LICENSE
 LazyData: true
 Imports: dplyr,
     sp,
-    sweboundaries,
     lubridate,
     stringr,
     maptools,
-    assertthat
+    assertthat,
+    ggplot2
 Suggests: survival,
-    ggplot2,
     rgdal,
-    plyr
+    plyr,
+    knitr,
+    testthat
+VignetteBuilder: knitr

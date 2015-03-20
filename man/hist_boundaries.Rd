@@ -2,7 +2,7 @@
 % Please edit documentation in R/hist_boundaries.R
 \name{hist_boundaries}
 \alias{hist_boundaries}
-\title{Swe Boundaries}
+\title{Historical boundaries}
 \usage{
 hist_boundaries(date, type = c("parish", "county"), format = c("sp", "df",
   "meta"))
@@ -10,17 +10,21 @@ hist_boundaries(date, type = c("parish", "county"), format = c("sp", "df",
 \arguments{
 \item{date}{a date, a year or a date/year range}
 
-\item{type}{type of unit, "county" or "municipal"}
+\item{type}{type of unit, "parish" or "county"}
 
 \item{format}{format of return object, "df" for data.frame, "sp" for
 SpatialPolygonsDataFrame and "meta" for only meta-data.}
 }
 \description{
-Get swedish administrative boundaries for a specified year.
+Get Swedish administrative boundaries of parishes or counties
+  for a specified year 1600-1990.
 }
 \examples{
 map <- hist_boundaries(1900, "county")
 library(sp)
 plot(map)
+
+period_map <- hist_boundaries(c(1800, 1900))
+plot(period_map$map)
 }
 
