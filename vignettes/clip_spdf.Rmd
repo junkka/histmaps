@@ -1,0 +1,58 @@
+---
+title: "Cut sp by bbox"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Cut sp by bbox}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+Cut a `SpatialPolygonsDataFrame` by a `bbox`. First lets load the data and choose a county.
+
+```{r, fig.height = 7, fig.width = 7}
+library(histmaps)
+library(sp)
+
+svelan <- hist_boundaries(1900, "county")
+jkpg = 6
+sub_sl <- subset(svelan, lan == jkpg)
+plot(svelan)
+plot(sub_sl, col = "red", add = T)
+```
+
+The county
+
+```{r, fig.height = 7, fig.width = 7}
+plot(sub_sl)
+```
+
+Add a the boundary box
+
+```{r, fig.height = 7, fig.width = 7}
+bb <- bbox(sub_sl)
+bb[ ,1] <- bb[ ,1] - 5000
+bb[ ,2] <- bb[ ,2] + 5000
+b_poly <- as(raster::extent(as.vector(t(bb))), "SpatialPolygons")
+plot(b_poly, border = "red")
+plot(sub_sl, add = T)
+```
+
+Cut parishes by county boundary box.
+
+```{r, fig.height = 7, fig.width = 7}
+par_sub <- hist_boundaries(1900, "parish")
+cut_par <- clip_spdf(par_sub, bb)
+plot(cut_par)
+plot(sub_sl, lwd = 2, border = "red", add = T)
+```
+
+Subset parishes by county and cut county by boundary box
+
+```{r, fig.height = 7, fig.width = 7}
+par_sub <- subset(par_sub, county == jkpg)
+
+cut_county <- clip_spdf(svelan, bb)
+plot(cut_county)
+plot(sub_sl, lwd = 2, add = T)
+plot(par_sub, add = T)
+```

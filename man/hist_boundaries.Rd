@@ -8,7 +8,7 @@ hist_boundaries(date, type = c("parish", "county"), format = c("sp", "df",
   "meta"))
 }
 \arguments{
-\item{date}{a date, a year or a date/year range}
+\item{date}{a date, a year or a vector with date/year range}
 
 \item{type}{type of unit, "parish" or "county"}
 

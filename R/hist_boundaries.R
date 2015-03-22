@@ -5,7 +5,7 @@
 #' Get Swedish administrative boundaries of parishes or counties 
 #'   for a specified year 1600-1990.
 #'
-#' @param date a date, a year or a date/year range
+#' @param date a date, a year or a vector with date/year range
 #' @param type type of unit, "parish" or "county"
 #' @param format format of return object, "df" for data.frame, "sp" for 
 #'   SpatialPolygonsDataFrame and "meta" for only meta-data.

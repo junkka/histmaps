@@ -1,6 +1,6 @@
-#' Cut SpatialPolygonsDataFrame
+#' Clip SpatialPolygonsDataFrame
 #'
-#' Cut a spdf to a bondry box
+#' Cut a \code{SpatialPolygonsDataFrame} to a boundry box
 #'
 #' @param shp SpatialPolygonsDataFrame
 #' @param bb Boundry box
@@ -13,5 +13,10 @@ clip_spdf <- function(shp, bb, byid = T){
   else 
     b_poly <- as(raster::extent(bb), "SpatialPolygons")
   sp::proj4string(b_poly) <- sp::proj4string(shp)
-  rgeos::gIntersection(shp, b_poly, byid = byid)
+  res <- rgeos::gIntersection(shp, b_poly, id = rownames(shp@data), byid = byid)
+  ids <- sapply(slot(res, "polygons"), slot, "ID")
+  d <- slot(shp, "data") %>% add_rownames() %>% 
+    filter(rowname %in% ids)
+  rownames(d) <- ids
+  SpatialPolygonsDataFrame(res, data = d)
 }

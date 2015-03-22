@@ -2,7 +2,7 @@
 % Please edit documentation in R/cut_sp.R
 \name{clip_spdf}
 \alias{clip_spdf}
-\title{Cut SpatialPolygonsDataFrame}
+\title{Clip SpatialPolygonsDataFrame}
 \usage{
 clip_spdf(shp, bb, byid = T)
 }
@@ -14,6 +14,6 @@ clip_spdf(shp, bb, byid = T)
 \item{byid}{boolean}
 }
 \description{
-Cut a spdf to a bondry box
+Cut a \code{SpatialPolygonsDataFrame} to a boundry box
 }
 
