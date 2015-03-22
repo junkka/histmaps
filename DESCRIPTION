@@ -19,5 +19,7 @@ Suggests: survival,
     rgdal,
     plyr,
     knitr,
-    testthat
+    testthat,
+    rgeos,
+    raster
 VignetteBuilder: knitr

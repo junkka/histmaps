@@ -26,7 +26,7 @@ The county
 plot(sub_sl)
 ```
 
-Add a the boundary box
+Add a the boundary box.
 
 ```{r, fig.height = 7, fig.width = 7}
 bb <- bbox(sub_sl)
@@ -46,12 +46,12 @@ plot(cut_par)
 plot(sub_sl, lwd = 2, border = "red", add = T)
 ```
 
-Subset parishes by county and cut county by boundary box
+Subset parishes by county and cut county by boundary box using the wrapper function `cut_spbox`.
 
 ```{r, fig.height = 7, fig.width = 7}
 par_sub <- subset(par_sub, county == jkpg)
 
-cut_county <- clip_spdf(svelan, bb)
+cut_county <- cut_spbox(svelan, sub_sl, 5000)
 plot(cut_county)
 plot(sub_sl, lwd = 2, add = T)
 plot(par_sub, add = T)

@@ -2,6 +2,7 @@
 
 export(clip_spdf)
 export(create_block)
+export(cut_spbox)
 export(hist_boundaries)
 export(sp_to_ggplot)
 import(assertthat)

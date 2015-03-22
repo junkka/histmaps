@@ -143,7 +143,7 @@ get_period <- function(x, y){
 
 get_period_map <- function(m, ids){
   if (!require(maptools))
-    stop("Install maptools for SpatialPolygonsDataFrame")
+    stop("Period map requires maptools package")
   
   d <- slot(m, "data") %>% 
     select(nadkod) %>% 

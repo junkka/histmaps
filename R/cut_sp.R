@@ -8,6 +8,8 @@
 #' @export
 
 clip_spdf <- function(shp, bb, byid = T){
+  assert_that(all(c("raster", "rgeos") %in% rownames(installed.packages())), msg = "Requires raster package")
+
   if(class(bb) == "matrix") 
     b_poly <- as(raster::extent(as.vector(t(bb))), "SpatialPolygons")
   else 
@@ -19,4 +21,21 @@ clip_spdf <- function(shp, bb, byid = T){
     filter(rowname %in% ids)
   rownames(d) <- ids
   SpatialPolygonsDataFrame(res, data = d)
+}
+
+#' Cut SpatialPolygonsDataFrame
+#'
+#' Cut a sp object to the boundary box of another sp object
+#'
+#' @param big SpatialPolygonsDataFrame to be cut
+#' @param small SpatialPolygonsDataFrame which to get bbox of
+#' @param dist Added distanse of bbox
+#' @param ... optional arguments passed tp \code{clip_spdf}
+#' @export
+
+cut_spbox <- function(big, small, dist, ...) {
+  bb <- sp::bbox(small)
+  bb[ ,1] <- bb[ ,1] - dist
+  bb[ ,2] <- bb[ ,2] + dist
+  clip_spdf(big, bb, ...)
 }
