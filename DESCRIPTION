@@ -1,7 +1,7 @@
 Encoding: UTF-8
 Package: histmaps
 Title: Swedish historical administrative maps
-Version: 0.2.3
+Version: 0.2.4
 Authors@R: "Johan Junkka <johan.junkka@gmail.com> [aut, cre]"
 Description: A R data package of Swedish historical administrative boundaries for
   parishes and counties 1600-1990
