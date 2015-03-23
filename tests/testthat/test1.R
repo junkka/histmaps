@@ -49,4 +49,14 @@ test_that("get parish period", {
   expect_equal(length(res$map), length(unique(res$lookup$geomid)))
   expect_true(all(res$map@data$geomid %in% unique(res$lookup$geomid)))
   expect_true(all(unique(res$lookup$geomid) %in% res$map@data$geomid))
+
+  res <- hist_boundaries(c(1900, 1920))
+  
+  expect_is(res, "list")
+  expect_is(res[[1]], "SpatialPolygonsDataFrame")
+  expect_is(res[[2]], "data.frame")
+
+  expect_equal(length(res$map), length(unique(res$lookup$geomid)))
+  expect_true(all(res$map@data$geomid %in% unique(res$lookup$geomid)))
+  expect_true(all(unique(res$lookup$geomid) %in% res$map@data$geomid))
 })

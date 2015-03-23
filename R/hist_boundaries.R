@@ -47,14 +47,18 @@ hist_boundaries <- function(date,
   if (x > 1990 || x < 1600 || y > 1990 || y < 1600 )
     stop("Date must be between 1600-01-01 and 1990-12-31")
   
+  e <- environment()
 
   if (type == "county"){
+    data(hist_county, package = "histmaps", envir = e)
     res <- subset(hist_county, from <= x & tom >= y)
   }
   if (type == "parish") {
+    data(hist_parish, package = "histmaps", envir = e)
     res <- subset(hist_parish, from <= x & tom >= y)
     # add county
     if (!period){
+      data(par_to_county, package = "histmaps", envir = e)
       slot(res, "data") <- par_to_county %>% 
         filter(from <= x, tom >= y) %>% 
         select(nadkod, county) %>% 
@@ -128,6 +132,10 @@ get_year.default <- function(x, ...) {
 
 get_period <- function(x, y){
   # for a range get all relationscodes that are stretching over period
+  e <- environment()
+  data(parish_relations, package = "histmaps", envir = e)
+  data(hist_parish, package = "histmaps", envir = e)
+
   rels <- filter(parish_relations, year <= x, year >= y) %>% 
     select(nadkod, nadkod2)
   pars <- slot(subset(hist_parish, from <= x & tom >= y), "data") %>% 
@@ -149,14 +157,12 @@ get_period_map <- function(m, ids){
     select(nadkod) %>% 
     left_join(ids, by = "nadkod")
   
-  assert_that(all(!is.na(d$geomid)))
-  assert_that(nrow(d) == nrow(m))
+  # assert_that(all(!is.na(d$geomid)))
+  # assert_that(nrow(d) == nrow(m))
 
   slot(m, "data") <- d
   res <- unionSpatialPolygons(m, m@data$geomid)
-  
-  assert_that(length(res) == length(unique(ids$geomid)))
-  
+   
   dat <- data.frame(geomid = unique(ids$geomid))
   rownames(dat) <- unique(ids$geomid)
   res <- SpatialPolygonsDataFrame(res, dat)
