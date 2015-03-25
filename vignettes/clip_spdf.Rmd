@@ -37,22 +37,49 @@ plot(b_poly, border = "red")
 plot(sub_sl, add = T)
 ```
 
-Cut parishes by county boundary box.
+Cut county map by a county boundary box.
 
 ```{r, fig.height = 7, fig.width = 7}
-par_sub <- hist_boundaries(1900, "parish")
-cut_par <- clip_spdf(par_sub, bb)
-plot(cut_par)
+cut_county <- clip_spdf(svelan, bb)
+plot(cut_county)
 plot(sub_sl, lwd = 2, border = "red", add = T)
 ```
 
 Subset parishes by county and cut county by boundary box using the wrapper function `cut_spbox`.
 
 ```{r, fig.height = 7, fig.width = 7}
-par_sub <- subset(par_sub, county == jkpg)
+parish <- hist_boundaries(1900, "parish")
+par_sub <- subset(parish, county == jkpg)
 
-cut_county <- cut_spbox(svelan, sub_sl, 5000)
-plot(cut_county)
+base_map <- cut_spbox(svelan, sub_sl, 5000)
+plot(base_map, col = "#DEDEC8")
 plot(sub_sl, lwd = 2, add = T)
-plot(par_sub, add = T)
+plot(par_sub, col = "#F5F5DC", add = T)
+```
+
+Or in ggplot
+
+```{r ggplot, fig.height = 7, fig.width = 7}
+library(ggplot2)
+library(dplyr)
+
+g_base <- sp_to_ggplot(base_map)
+g_jkpg <- sp_to_ggplot(sub_sl)
+g_pars <- sp_to_ggplot(par_sub)
+g_town <- hist_boundaries(1900, "town", "df") %>% 
+  filter(code == jkpg)
+
+ggplot() +
+  geom_polygon(
+    data = g_base, aes(long, lat, group = group), fill = "#DEDEC8", color = "#FFFFFF") + 
+  geom_polygon(
+    data = g_pars, aes(long, lat, group = group), fill = "#E6E6B3", color = "#FFFFFF") +
+  geom_path(data = g_jkpg, aes(long, lat, group = group), size = 1, color = "#FFFFFF") +
+  geom_point(data = g_town, aes(lon, lat), size = 3, color = "black") +
+  geom_text(data = g_town, aes(lon, lat, label = town, hjust = -0.1)) + 
+  coord_equal() + theme_minimal() + 
+  theme(
+    axis.text  = element_blank(), 
+    axis.ticks = element_blank(), 
+    axis.title = element_blank())
 ```

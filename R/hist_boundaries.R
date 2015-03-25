@@ -56,7 +56,7 @@ hist_boundaries <- function(date,
   }
   if (type == "parish") {
     data(hist_parish, package = "histmaps", envir = env)
-    res <- sp::subset(hist_parish, from <= x & tom >= y)
+    res <- subset(hist_parish, from <= x & tom >= y)
     # add county
     if (!period){
       data(par_to_county, package = "histmaps", envir = env)
@@ -68,7 +68,7 @@ hist_boundaries <- function(date,
   }
   if (type == "town"){
     data(hist_town, package = "histmaps", envir = env)
-    res <- sp::subset(hist_town, from <= x & tom >= y)
+    res <- subset(hist_town, from <= x & tom >= y)
   }
 
   if (period) {
@@ -143,7 +143,7 @@ get_period <- function(x, y){
 
   rels <- filter(parish_relations, year <= x, year >= y) %>% 
     select(nadkod, nadkod2)
-  pars <- slot(sp::subset(hist_parish, from <= x & tom >= y), "data") %>% 
+  pars <- slot(subset(hist_parish, from <= x & tom >= y), "data") %>% 
     mutate(nadkod2 = nadkod) %>% 
     select(nadkod, nadkod2)
   parsc <- rbind(rels, pars) %>% 
@@ -170,7 +170,7 @@ get_period_map <- function(m, ids){
    
   dat <- data.frame(geomid = unique(ids$geomid))
   rownames(dat) <- unique(ids$geomid)
-  res <- sp::SpatialPolygonsDataFrame(res, dat)
+  res <- SpatialPolygonsDataFrame(res, dat)
   
   return(res)
 }

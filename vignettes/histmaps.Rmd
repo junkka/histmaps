@@ -58,8 +58,8 @@ kable(head(period_map$lookup))
 ## With county centers
 
 ```{r towns, fig.height= 10, fig.width = 7}
-town <- hist_boundaries(1690, "town")
-m <- hist_boundaries(1690, "county")
+town <- hist_boundaries(1820, "town")
+m <- hist_boundaries(1820, "county")
 plot(m)
 plot(town, add = T, col = "red", pch = 16)
 ```

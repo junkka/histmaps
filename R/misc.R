@@ -35,7 +35,10 @@ create_block <- function(x, y) {
 #' @export
 
 sp_to_ggplot <- function(sp){
-  
+
+  if (inherits(sp, "SpatialPointsDataFrame"))  
+    return(as.data.frame(sp))
+
   sp@data$id = rownames(sp@data)
   ret_d = ggplot2::fortify(sp, region="id")
   ret_d = left_join(ret_d, sp@data, by="id")
