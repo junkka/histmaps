@@ -12,7 +12,6 @@
 #' @export
 #' @import dplyr
 #' @import sp
-#' @import assertthat
 #' @import maptools
 #' @examples
 #' map <- hist_boundaries(1900, "county")
@@ -38,8 +37,10 @@ hist_boundaries <- function(date,
     # get year of both
     y <- get_year(date[1])
     x <- get_year(date[2])
-    assert_that(y <= x, msg = "Range start must be before end")
-    assert_that(type == "parish", msg = "Range map only possible for parish")
+    if (y > x)
+      stop("Range start must be before end")
+    if (type != "parish")
+      stop("Range map only possible for parish")
     # set period to TRUE
     period <- TRUE
   }

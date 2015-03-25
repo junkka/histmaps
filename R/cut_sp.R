@@ -8,8 +8,8 @@
 #' @export
 
 clip_spdf <- function(shp, bb, byid = T){
-  assert_that(all(c("raster", "rgeos") %in% rownames(installed.packages())), msg = "Requires raster package")
-
+  if (all(c("raster", "rgeos") %in% rownames(installed.packages())) == FALSE)
+    stop("Requires raster and rgeos packages")
   if(class(bb) == "matrix") 
     b_poly <- as(raster::extent(as.vector(t(bb))), "SpatialPolygons")
   else 
