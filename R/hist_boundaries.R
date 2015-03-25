@@ -37,8 +37,10 @@ hist_boundaries <- function(date,
     # get year of both
     y <- get_year(date[1])
     x <- get_year(date[2])
-    assertthat::assert_that(y <= x, msg = "Range start must be before end")
-    assertthat::assert_that(type == "parish", msg = "Range map only possible for parish")
+    if (y > x)
+      stop("Range start must be before end")
+    if (type != "parish")
+      stop("Range map only possible for parish")
     # set period to TRUE
     period <- TRUE
   }
@@ -159,9 +161,9 @@ get_period_map <- function(m, ids){
   d <- slot(m, "data") %>% 
     select(nadkod) %>% 
     left_join(ids, by = "nadkod")
-  
-  assertthat::assert_that(all(!is.na(d$geomid)))
-  assertthat::assert_that(nrow(d) == nrow(m))
+    
+  stopifnot(all(!is.na(d$geomid)))
+  stopifnot(nrow(d) == nrow(m))
 
   slot(m, "data") <- d
   res <- maptools::unionSpatialPolygons(m, m@data$geomid)
