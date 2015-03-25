@@ -9,7 +9,7 @@ vignette: >
 ---
 
 
-A R data package of Swedish historical administrative boundaries for parishes and counties 1600-1990.
+A R data package of Swedish historical administrative boundaries for parishes and counties 1634-1990.
 
 ## County map
 
@@ -52,4 +52,14 @@ plot(period_map$map)
 
 ```{r period_lookup}
 kable(head(period_map$lookup))
+```
+
+
+## With county centers
+
+```{r towns, fig.height= 10, fig.width = 7}
+town <- hist_boundaries(1690, "town")
+m <- hist_boundaries(1690, "county")
+plot(m)
+plot(town, add = T, col = "red", pch = 16)
 ```

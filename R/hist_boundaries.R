@@ -3,17 +3,16 @@
 #' Historical boundaries
 #'
 #' Get Swedish administrative boundaries of parishes or counties 
-#'   for a specified year 1600-1990.
+#'   for a specified year 1634-1990.
 #'
 #' @param date a date, a year or a vector with date/year range
-#' @param type type of unit, "parish" or "county"
+#' @param type type of unit, "parish", "county" or "town"
 #' @param format format of return object, "df" for data.frame, "sp" for 
 #'   SpatialPolygonsDataFrame and "meta" for only meta-data.
 #' @export
-#' @import dplyr
 #' @import sp
-#' @import assertthat
 #' @import maptools
+#' @import dplyr
 #' @examples
 #' map <- hist_boundaries(1900, "county")
 #' library(sp)
@@ -24,7 +23,7 @@
 #' 
 
 hist_boundaries <- function(date, 
-    type = c("parish", "county"), 
+    type = c("parish", "county", "town"), 
     format = c("sp", "df", "meta")) {
 
   type <- match.arg(type)
@@ -38,32 +37,36 @@ hist_boundaries <- function(date,
     # get year of both
     y <- get_year(date[1])
     x <- get_year(date[2])
-    assert_that(y <= x, msg = "Range start must be before end")
-    assert_that(type == "parish", msg = "Range map only possible for parish")
+    assertthat::assert_that(y <= x, msg = "Range start must be before end")
+    assertthat::assert_that(type == "parish", msg = "Range map only possible for parish")
     # set period to TRUE
     period <- TRUE
   }
 
-  if (x > 1990 || x < 1600 || y > 1990 || y < 1600 )
-    stop("Date must be between 1600-01-01 and 1990-12-31")
+  if (x > 1990 || x < 1634 || y > 1990 || y < 1634 )
+    stop("Date must be between 1634-01-01 and 1990-12-31")
   
-  e <- environment()
+  env <- environment()
 
   if (type == "county"){
-    data(hist_county, package = "histmaps", envir = e)
+    data(hist_county, package = "histmaps", envir = env)
     res <- subset(hist_county, from <= x & tom >= y)
   }
   if (type == "parish") {
-    data(hist_parish, package = "histmaps", envir = e)
-    res <- subset(hist_parish, from <= x & tom >= y)
+    data(hist_parish, package = "histmaps", envir = env)
+    res <- sp::subset(hist_parish, from <= x & tom >= y)
     # add county
     if (!period){
-      data(par_to_county, package = "histmaps", envir = e)
+      data(par_to_county, package = "histmaps", envir = env)
       slot(res, "data") <- par_to_county %>% 
         filter(from <= x, tom >= y) %>% 
         select(nadkod, county) %>% 
         left_join(slot(res, "data"), ., by = "nadkod")
     }
+  }
+  if (type == "town"){
+    data(hist_town, package = "histmaps", envir = env)
+    res <- sp::subset(hist_town, from <= x & tom >= y)
   }
 
   if (period) {
@@ -138,7 +141,7 @@ get_period <- function(x, y){
 
   rels <- filter(parish_relations, year <= x, year >= y) %>% 
     select(nadkod, nadkod2)
-  pars <- slot(subset(hist_parish, from <= x & tom >= y), "data") %>% 
+  pars <- slot(sp::subset(hist_parish, from <= x & tom >= y), "data") %>% 
     mutate(nadkod2 = nadkod) %>% 
     select(nadkod, nadkod2)
   parsc <- rbind(rels, pars) %>% 
@@ -157,15 +160,15 @@ get_period_map <- function(m, ids){
     select(nadkod) %>% 
     left_join(ids, by = "nadkod")
   
-  # assert_that(all(!is.na(d$geomid)))
-  # assert_that(nrow(d) == nrow(m))
+  assertthat::assert_that(all(!is.na(d$geomid)))
+  assertthat::assert_that(nrow(d) == nrow(m))
 
   slot(m, "data") <- d
-  res <- unionSpatialPolygons(m, m@data$geomid)
+  res <- maptools::unionSpatialPolygons(m, m@data$geomid)
    
   dat <- data.frame(geomid = unique(ids$geomid))
   rownames(dat) <- unique(ids$geomid)
-  res <- SpatialPolygonsDataFrame(res, dat)
+  res <- sp::SpatialPolygonsDataFrame(res, dat)
   
   return(res)
 }

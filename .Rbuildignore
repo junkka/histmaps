@@ -3,3 +3,4 @@
 ^README.Rmd$
 ^db_config.R$
 ^README_files
+^.Rprofile

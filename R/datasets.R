@@ -68,5 +68,18 @@ NULL
 #' }
 NULL
 
+#' @name hist_town
+#' @title County towns
+#' @description County towns, residensstad
+#' @docType data
+#' @usage data(hist_town)
+#' @format A \code{SpatialPolygonsDataFrame} with 28 elements
+#' \describe{
+#'   \item{code}{County code}
+#'   \item{town}{County town name}
+#'   \item{from}{From year}
+#'   \item{tom}{To year}
+#' }
+NULL
 
 
