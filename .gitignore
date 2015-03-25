@@ -1,3 +1,4 @@
 inst/sources/
 db_config.R
 inst/doc
+.Rprofile
