@@ -41,4 +41,4 @@ remove_small_holes <- function(x) {
 
 sweden <- remove_small_holes(x2)
 
-save(sweden, file = "s")
+save(sweden, file = "data/sweden.rda")
