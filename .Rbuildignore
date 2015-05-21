@@ -4,3 +4,9 @@
 ^db_config.R$
 ^README_files
 ^.Rprofile
+^histmaps\.sublime-project$
+^test\.sh$
+^docker/$
+^docker_test/$
+^.*\.Rproj$
+^\.Rproj\.user$

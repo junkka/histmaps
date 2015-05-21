@@ -83,3 +83,16 @@ NULL
 NULL
 
 
+
+#' @name sweden
+#' @title Sweden
+#' @description Sweden national boundaries
+#' @docType data
+#' @usage data(sweden)
+#' @format A \code{SpatialPolygonsDataFrame} with 28 elements
+#' \describe{
+#'   \item{SVE_ID}{id}
+#' }
+NULL
+
+
