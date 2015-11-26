@@ -5,3 +5,5 @@ inst/doc
 histmaps.sublime-project
 histmaps.sublime-workspace
 .Rproj.user
+data/hist_county.rda
+data/hist_parish.rda
