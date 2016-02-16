@@ -13,6 +13,7 @@ test_that("get parish sp", {
 })
 
 test_that("get parish df", {
+  library(maptools)
   res <- hist_boundaries(1800, "par", "df")
   expect_is(res, "data.frame")
   expect_equal(length(unique(res$geomid)), 2431)

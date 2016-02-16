@@ -60,6 +60,7 @@ plot(par_sub, col = "#F5F5DC", add = T)
 Or in ggplot
 
 ```{r ggplot, fig.height = 7, fig.width = 7}
+library(maptools)
 library(ggplot2)
 library(dplyr)
 
