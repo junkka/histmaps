@@ -20,7 +20,7 @@ clip_spdf <- function(shp, bb, byid = T){
   d <- slot(shp, "data") %>% add_rownames() %>% 
     filter(rowname %in% ids)
   rownames(d) <- ids
-  SpatialPolygonsDataFrame(res, data = d)
+  SpatialPolygonsDataFrame(res, data = as.data.frame(d))
 }
 
 #' Cut SpatialPolygonsDataFrame
