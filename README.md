@@ -1,17 +1,20 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 Swedish historical administrative maps
 ======================================
 
 A R data package of Swedish historical administrative boundaries for parishes and counties 1634-1990.
 
-**Data files are not incuded**
+Source
+------
+
+NAD Topography data from Riksarkivet <http://riksarkivet.se/psidata> released under [Creative Commons CCZero](https://creativecommons.org/publicdomain/zero/1.0/).
 
 County map
 ----------
 
-``` {.r}
+``` r
 library(histmaps)
+library(maptools)
 library(sp)
 map <- hist_boundaries(1800, "county")
 plot(map)
@@ -22,7 +25,7 @@ plot(map)
 Parish map
 ----------
 
-``` {.r}
+``` r
 library(knitr)
 library(ggplot2)
 library(dplyr)
@@ -42,27 +45,27 @@ Period map
 
 As parishes changes boundaries over the course of history a given map a certain year is not representative of the boundaries another year. To create a map for a period the parishes need to be aggregated to the lowest common denominator for that period. You can do this by supplying a date range to `hist_boundaries`.
 
-``` {.r}
+``` r
 period_map <- hist_boundaries(c(1900, 1920)) 
 ```
 
 The function returns a list where the first object is the map data and the second is a lookup table for aggregating your data to the new artificial parish boundaries.
 
-``` {.r}
+``` r
 plot(period_map$map)
 ```
 
 ![](README_files/figure-markdown_github/period_plot-1.png)
 
-``` {.r}
+``` r
 kable(head(period_map$lookup))
 ```
 
-|nadkod|geomid|
-|-----:|-----:|
-|148010000|1973|
-|148012000|1976|
-|228102000|365|
-|228401000|407|
-|242501000|290|
-|242502000|290|
+|     nadkod|  geomid|
+|----------:|-------:|
+|  148010000|    1973|
+|  148012000|    1976|
+|  228102000|     365|
+|  228401000|     407|
+|  242501000|     290|
+|  242502000|     290|

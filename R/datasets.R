@@ -14,7 +14,7 @@
 #'   \item{geomid}{Unique geomid}
 #'   \item{area}{Area in square meters}
 #' }
-#' @source Based on parish borders from Riksarkivet.
+#' @source NAD Topography data from Riksarkivet \url{http://riksarkivet.se/psidata}.
 NULL
 
 #' @name hist_parish
@@ -35,7 +35,7 @@ NULL
 #'   \item{dedik}{Dedik code}
 #'   \item{forkod}{Parish code}
 #' }
-#' @source Based on parish borders from Riksarkivet.
+#' @source NAD Topography data from Riksarkivet \url{http://riksarkivet.se/psidata}.
 NULL
 
 
@@ -51,7 +51,7 @@ NULL
 #'   \item{tom}{End year}
 #'   \item{county}{County code}
 #' }
-#' @source Based on parish borders from Riksarkivet.
+#' @source NAD Topography data from Riksarkivet \url{http://riksarkivet.se/psidata}.
 NULL
 
 #' @name parish_relations

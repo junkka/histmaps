@@ -11,12 +11,15 @@ Swedish historical administrative maps
 
 A R data package of Swedish historical administrative boundaries for parishes and counties 1634-1990.
 
-**Data files are not incuded**
+## Source
+
+NAD Topography data from Riksarkivet [http://riksarkivet.se/psidata](http://riksarkivet.se/psidata) released under [Creative Commons CCZero](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## County map
 
 ```{r county_ex, message = FALSE}
 library(histmaps)
+library(maptools)
 library(sp)
 map <- hist_boundaries(1800, "county")
 plot(map)
