@@ -23,10 +23,11 @@
 #' 
 
 hist_boundaries <- function(date, 
-    type = c("parish", "county", "town"), 
+    type = c("parish", "county", "harad", "fogderi", "hovratt", "kommun", "kontrakt", "domsaga", "stift", "tingsratt"), 
     format = c("sp", "df", "meta")) {
 
   type <- match.arg(type)
+  type <- type_match(type)
   format <- match.arg(format)
 
   if (length(date) == 1){
@@ -39,8 +40,6 @@ hist_boundaries <- function(date,
     x <- get_year(date[2])
     if (y > x)
       stop("Range start must be before end")
-    if (type != "parish")
-      stop("Range map only possible for parish")
     # set period to TRUE
     period <- TRUE
   }
@@ -50,30 +49,13 @@ hist_boundaries <- function(date,
   
   env <- environment()
 
-  if (type == "county"){
-    data(hist_county, package = "histmaps", envir = env)
-    res <- subset(hist_county, from <= x & tom >= y)
-  }
-  if (type == "parish") {
-    data(hist_parish, package = "histmaps", envir = env)
-    res <- subset(hist_parish, from <= x & tom >= y)
-    # add county
-    if (!period){
-      data(par_to_county, package = "histmaps", envir = env)
-      slot(res, "data") <- par_to_county %>% 
-        filter(from <= x, tom >= y) %>% 
-        select(nadkod, county) %>% 
-        left_join(slot(res, "data"), ., by = "nadkod")
-    }
-  }
-  if (type == "town"){
-    data(hist_town, package = "histmaps", envir = env)
-    res <- subset(hist_town, from <= x & tom >= y)
-  }
-
+  
+  data(nad, package = "histmaps", envir = env)
+  res <- subset(nad, g_type == type & g_end_y >= y & g_start_y <=x)
+  
   if (period) {
     # get new  commbined id 
-    ids <- get_period(x, y)
+    ids <- get_period(x, y, type)
     res <- get_period_map(res, ids)
     return(list(map = switch(format,
         sp = res,
@@ -135,21 +117,21 @@ get_year.default <- function(x, ...) {
 #' 
 
 
-get_period <- function(x, y){
+get_period <- function(x, y, type){
   # for a range get all relationscodes that are stretching over period
   e <- environment()
   data(parish_relations, package = "histmaps", envir = e)
-  data(hist_parish, package = "histmaps", envir = e)
+  data(nad, package = "histmaps", envir = e)
 
-  rels <- filter(parish_relations, year <= x, year >= y) %>% 
-    select(nadkod, nadkod2)
-  pars <- slot(subset(hist_parish, from <= x & tom >= y), "data") %>% 
-    mutate(nadkod2 = nadkod) %>% 
-    select(nadkod, nadkod2)
+  rels <- filter(parish_relations, year <= x, year >= y & g_type == type) %>% 
+    select(g_unit, g_unit2)
+  pars <- slot(subset(nad, g_start_y <= x & g_end_y >= y & g_type == type), "data") %>% 
+    mutate(g_unit2 = g_unit) %>% 
+    select(g_unit, g_unit2)
   parsc <- rbind(rels, pars) %>% 
     distinct() %>% 
-    mutate(geomid = create_block(nadkod, nadkod2)) %>% 
-    select(nadkod, geomid) %>% distinct()
+    mutate(geomid = create_block(g_unit, g_unit2)) %>% 
+    select(g_unit, geomid) %>% distinct()
   return(parsc)
 }
 
@@ -159,8 +141,8 @@ get_period_map <- function(m, ids){
     stop("Period map requires maptools package")
   
   d <- slot(m, "data") %>% 
-    select(nadkod) %>% 
-    left_join(ids, by = "nadkod")
+    select(g_unit) %>% 
+    left_join(ids, by = "g_unit")
     
   stopifnot(all(!is.na(d$geomid)))
   stopifnot(nrow(d) == nrow(m))
@@ -173,4 +155,10 @@ get_period_map <- function(m, ids){
   res <- SpatialPolygonsDataFrame(res, dat)
   
   return(res)
+}
+
+type_match <- function(x){
+  ind <- c("parish", "county", "harad", "fogderi", "hovratt", "kommun", "kontrakt", "domsaga", "stift", "tingsratt")
+  out <- c("swe_kyrk", "swe_lan", "swe_harad", "swe_fog", "swe_hov", "swe_kom", "swe_kon", "swe_rad", "swe_stift", "swe_tingt")
+  out[ind == x]
 }
