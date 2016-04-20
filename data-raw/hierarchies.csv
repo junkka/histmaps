@@ -1,0 +1,12 @@
+over,under
+swe_lan,swe_fog
+swe_lan,swe_kom
+swe_stift,swe_kon
+swe_kon,swe_past
+swe_past,swe_kyrk
+swe_fog,swe_harad
+swe_fog,swe_kyrk
+swe_hov,swe_rad
+swe_rad,swe_harad
+swe_rad,swe_tingt
+swe_harad,swe_kyrk
