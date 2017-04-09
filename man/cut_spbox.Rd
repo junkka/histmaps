@@ -18,4 +18,3 @@ cut_spbox(big, small, dist, ...)
 \description{
 Cut a sp object to the boundary box of another sp object
 }
-

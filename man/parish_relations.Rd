@@ -17,4 +17,3 @@ data(parish_relations)
 \description{
 Parish relations, succeeding and preceding parish.
 }
-

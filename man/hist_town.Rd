@@ -17,4 +17,3 @@ data(hist_town)
 \description{
 County towns, residensstad
 }
-

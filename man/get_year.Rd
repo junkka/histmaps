@@ -14,4 +14,3 @@ get_year(x, ...)
 \description{
 Transforms a atomic vector to a integer of year
 }
-

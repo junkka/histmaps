@@ -16,4 +16,3 @@ clip_spdf(shp, bb, byid = T)
 \description{
 Cut a \code{SpatialPolygonsDataFrame} to a boundry box
 }
-

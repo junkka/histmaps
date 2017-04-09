@@ -24,4 +24,3 @@ data(hist_county)
 \description{
 Swedish county borders 1600-1990.
 }
-

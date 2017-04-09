@@ -28,4 +28,3 @@ period_map <- hist_boundaries(c(1800, 1900))
 plot(period_map$map)
 
 }
-

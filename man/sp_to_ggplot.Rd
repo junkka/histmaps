@@ -12,4 +12,3 @@ sp_to_ggplot(sp)
 \description{
 Create ggplot map data.frame from NAD sp
 }
-

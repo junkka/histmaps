@@ -14,4 +14,3 @@ get_period(x, y)
 \description{
 Description
 }
-

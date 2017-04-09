@@ -6,26 +6,14 @@
 #'
 #' @param x id 1
 #' @param y id 2
+#' @import igraph
 #' @export
 
-create_block <- function(x, y) {
-    
-  new <- rep(NA, length(x))
-  names(x) <- c(1:length(x))
-  names(y) <- c(1:length(y))
-
-  for (i in 1:length(x)) {
-    x_matches <- na.omit(x[x %in% c(x[i], y[i])])
-    y_matches <- na.omit(y[y %in% c(x[i], y[i])])
-    matches <- as.integer(unique(c(names(x_matches), names(y_matches))))
-    newids <- unique(na.omit(new[matches]))
-    # get id that have match
-    new_match <- which(new %in% newids)
-    matches <- na.omit(unique(c(matches, new_match)))
-    new[matches] <- i
-  }
-  return(new)
-} 
+create_block <- function(x, y){
+  g <- graph_from_data_frame(data.frame(x, y))
+  m <- membership(components(g))
+  as.vector(m[match(x, as.integer(names(m)))])
+}
 
 
 #' Create ggplot map data.frame from NAD sp

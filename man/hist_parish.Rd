@@ -26,4 +26,3 @@ data(hist_parish)
 \description{
 Swedish parish borders 1600-1990.
 }
-

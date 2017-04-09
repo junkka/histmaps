@@ -14,4 +14,3 @@ data(sweden)
 \description{
 Sweden national boundaries
 }
-

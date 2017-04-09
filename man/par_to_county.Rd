@@ -20,4 +20,3 @@ data(par_to_county)
 \description{
 Parish to county lookuptable.
 }
-
