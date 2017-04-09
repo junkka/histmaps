@@ -155,8 +155,6 @@ get_period <- function(x, y){
 
 
 get_period_map <- function(m, ids){
-  if (!require(maptools))
-    stop("Period map requires maptools package")
   
   d <- slot(m, "data") %>% 
     select(nadkod) %>% 
@@ -166,7 +164,7 @@ get_period_map <- function(m, ids){
   stopifnot(nrow(d) == nrow(m))
 
   slot(m, "data") <- d
-  res <- maptools::unionSpatialPolygons(m, m@data$geomid)
+  res <- unionSpatialPolygons(m, m@data$geomid)
    
   dat <- data.frame(geomid = unique(ids$geomid))
   rownames(dat) <- unique(ids$geomid)

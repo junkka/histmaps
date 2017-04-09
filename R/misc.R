@@ -6,7 +6,7 @@
 #'
 #' @param x id 1
 #' @param y id 2
-#' @import igraph
+#' @importFrom igraph graph_from_data_frame membership components
 #' @export
 
 create_block <- function(x, y){

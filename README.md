@@ -14,6 +14,21 @@ County map
 
 ``` r
 library(histmaps)
+```
+
+    ## Warning: replacing previous import 'dplyr::union' by 'igraph::union' when
+    ## loading 'histmaps'
+
+    ## Warning: replacing previous import 'dplyr::as_data_frame' by
+    ## 'igraph::as_data_frame' when loading 'histmaps'
+
+    ## Warning: replacing previous import 'dplyr::groups' by 'igraph::groups' when
+    ## loading 'histmaps'
+
+    ## Warning: replacing previous import 'dplyr::%>%' by 'igraph::%>%' when
+    ## loading 'histmaps'
+
+``` r
 library(maptools)
 library(sp)
 map <- hist_boundaries(1800, "county")
@@ -35,7 +50,7 @@ p_map <- hist_boundaries("1866-06-06", "parish", "df")
 st_map <- p_map %>% filter(county < 3)
 ggplot(st_map, aes(long, lat, group = group)) +
   geom_polygon(fill = "lightgrey", color = "black") + coord_equal() + 
-  theme_minimal()
+  theme_void()
 ```
 
 ![](README_files/figure-markdown_github/parish_ex-1.png)
@@ -63,9 +78,9 @@ kable(head(period_map$lookup))
 
 |     nadkod|  geomid|
 |----------:|-------:|
-|  148010000|    1973|
-|  148012000|    1976|
-|  228102000|     365|
-|  228401000|     407|
-|  242501000|     290|
-|  242502000|     290|
+|  148010000|       1|
+|  148012000|       2|
+|  228102000|       3|
+|  228401000|       4|
+|  242501000|       5|
+|  242502000|       5|

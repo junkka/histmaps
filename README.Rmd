@@ -37,7 +37,7 @@ p_map <- hist_boundaries("1866-06-06", "parish", "df")
 st_map <- p_map %>% filter(county < 3)
 ggplot(st_map, aes(long, lat, group = group)) +
   geom_polygon(fill = "lightgrey", color = "black") + coord_equal() + 
-  theme_minimal()
+  theme_void()
 ```
 
 ## Period map
