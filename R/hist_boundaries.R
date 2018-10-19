@@ -93,7 +93,7 @@ hist_boundaries <- function(date,
 
 to_sf <- function(x){
   x@data <- as_tibble(x@data)
-  sf::st_to_sf(x)
+  sf::st_as_sf(x)
 }
 
 #' Get year
