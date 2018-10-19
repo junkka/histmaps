@@ -8,9 +8,10 @@
 #' @param date a date, a year or a vector with date/year range
 #' @param type type of unit, "parish", "county" or "town"
 #' @param format format of return object, "df" for data.frame, "sp" for 
-#'   SpatialPolygonsDataFrame and "meta" for only meta-data.
+#'   SpatialPolygonsDataFrame, "sf" for simple feature and "meta" for only meta-data.
 #' @export
 #' @import sp
+#' @import sf
 #' @import maptools
 #' @import dplyr
 #' @examples
@@ -24,7 +25,7 @@
 
 hist_boundaries <- function(date, 
     type = c("parish", "county", "town"), 
-    format = c("sp", "df", "meta")) {
+    format = c("sp", "df", "sf", "meta")) {
 
   type <- match.arg(type)
   format <- match.arg(format)
@@ -85,8 +86,14 @@ hist_boundaries <- function(date,
   return(switch(format,
     sp = res,
     df = sp_to_ggplot(res),
+    sf = to_sf(res),
     meta = res@data
   ))
+}
+
+to_sf <- function(x){
+  x@data <- as_tibble(x@data)
+  sf::st_to_sf(x)
 }
 
 #' Get year

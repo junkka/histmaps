@@ -4,8 +4,8 @@
 \alias{hist_boundaries}
 \title{Historical boundaries}
 \usage{
-hist_boundaries(date, type = c("parish", "county", "town"), format = c("sp",
-  "df", "meta"))
+hist_boundaries(date, type = c("parish", "county", "town"),
+  format = c("sp", "df", "sf", "meta"))
 }
 \arguments{
 \item{date}{a date, a year or a vector with date/year range}
@@ -13,7 +13,7 @@ hist_boundaries(date, type = c("parish", "county", "town"), format = c("sp",
 \item{type}{type of unit, "parish", "county" or "town"}
 
 \item{format}{format of return object, "df" for data.frame, "sp" for 
-SpatialPolygonsDataFrame and "meta" for only meta-data.}
+SpatialPolygonsDataFrame, "sf" for simple feature and "meta" for only meta-data.}
 }
 \description{
 Get Swedish administrative boundaries of parishes or counties 
