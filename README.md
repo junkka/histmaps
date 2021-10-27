@@ -7,7 +7,9 @@ A R data package of Swedish historical administrative boundaries for parishes an
 Source
 ------
 
-"Historiska GIS-kartor (information om territoriella indelningar i Sverige från 1500-talets slut till 1900-talets slut)" historical GIS data from the Swedish National Archive <http://riksarkivet.se/psidata> released under [Creative Commons CCZero](https://creativecommons.org/publicdomain/zero/1.0/).
+"Historiska GIS-kartor (information om territoriella indelningar i Sverige från 1500-talets slut till 1900-talets slut)" historical GIS data from the Swedish National Archive released under [Creative Commons CCZero](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The map projection is RT90 EPSG:2400
 
 County map
 ----------
