@@ -4,8 +4,11 @@
 \alias{hist_boundaries}
 \title{Historical boundaries}
 \usage{
-hist_boundaries(date, type = c("parish", "county", "town"),
-  format = c("sp", "df", "sf", "meta"))
+hist_boundaries(
+  date,
+  type = c("parish", "county", "town"),
+  format = c("sp", "df", "meta")
+)
 }
 \arguments{
 \item{date}{a date, a year or a vector with date/year range}
@@ -13,18 +16,17 @@ hist_boundaries(date, type = c("parish", "county", "town"),
 \item{type}{type of unit, "parish", "county" or "town"}
 
 \item{format}{format of return object, "df" for data.frame, "sp" for 
-SpatialPolygonsDataFrame, "sf" for simple feature and "meta" for only meta-data.}
+SpatialPolygonsDataFrame and "meta" for only meta-data.}
 }
 \description{
+Deprecated. Use `get_boundaries`. 
 Get Swedish administrative boundaries of parishes or counties 
   for a specified year 1634-1990.
 }
 \examples{
+library(sf)
 map <- hist_boundaries(1900, "county")
-library(sp)
-plot(map)
+plot(st_geometry(map))
 
-period_map <- hist_boundaries(c(1800, 1900))
-plot(period_map$map)
 
 }

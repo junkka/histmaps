@@ -2,34 +2,34 @@
 
 #' Historical boundaries
 #'
+#' Deprecated. Use `get_boundaries`. 
 #' Get Swedish administrative boundaries of parishes or counties 
 #'   for a specified year 1634-1990.
 #'
 #' @param date a date, a year or a vector with date/year range
 #' @param type type of unit, "parish", "county" or "town"
 #' @param format format of return object, "df" for data.frame, "sp" for 
-#'   SpatialPolygonsDataFrame, "sf" for simple feature and "meta" for only meta-data.
+#'   SpatialPolygonsDataFrame and "meta" for only meta-data.
 #' @export
-#' @import sp
-#' @import sf
-#' @import maptools
-#' @import dplyr
 #' @examples
+#' library(sf)
 #' map <- hist_boundaries(1900, "county")
-#' library(sp)
-#' plot(map)
+#' plot(st_geometry(map))
 #' 
-#' period_map <- hist_boundaries(c(1800, 1900))
-#' plot(period_map$map)
 #' 
 
 hist_boundaries <- function(date, 
     type = c("parish", "county", "town"), 
-    format = c("sp", "df", "sf", "meta")) {
-
+    format = c("sp", "df", "meta")) {
+  message("Deprecated. Use `get_boundaries`")
   type <- match.arg(type)
   format <- match.arg(format)
+  get_boundaries(date, type)
+}
 
+
+get_date <- function(date){
+  
   if (length(date) == 1){
     x <- get_year(date)
     y <- x
@@ -40,61 +40,64 @@ hist_boundaries <- function(date,
     x <- get_year(date[2])
     if (y > x)
       stop("Range start must be before end")
-    if (type != "parish")
-      stop("Range map only possible for parish")
-    # set period to TRUE
     period <- TRUE
   }
+  return(list(x=x,y=y,period=period))
+}
 
-  if (x > 1990 || x < 1634 || y > 1990 || y < 1634 )
-    stop("Date must be between 1634-01-01 and 1990-12-31")
+#' Parish boundaries
+#' 
+#' Get Swedish parish boundaries for a specified year 1634-1990.
+#' 
+#' @param date a date, a year or a vector with date/year range
+#' @param format format of return object, "df" for data.frame, "sp" for 
+#'   SpatialPolygonsDataFrame and "meta" for only meta-data.
+#' @export
+
+parish_boundaries <- function(date, format = c("sp", "df", "meta")) {
+  get_boundaries(date, "parish")
+}
+
+
+#' County boundaries
+#' 
+#' Get Swedish county boundaries for a specified year 1634-1990.
+#' 
+#' @param date a date, a year or a vector with date/year range
+#' @param format format of return object, "df" for data.frame, "sp" for 
+#'   SpatialPolygonsDataFrame and "meta" for only meta-data.
+#' @export
+
+
+county_boundaries <- function(date, format = c("sp", "df", "meta")){
+  get_boundaries(date, "county")
+}
+
+#' Towns in Sweden
+#' 
+#' Get Swedish towns for a specified year 1634-1990.
+#' 
+#' @param date a date, a year or a vector with date/year range
+#' @param format format of return object, "df" for data.frame, "sp" for 
+#'   SpatialPointsDataFrame and "meta" for only meta-data.
+#' @export
+
+county_towns <- function(date, format = c("sp", "df", "meta")){
   
-  env <- environment()
-
-  if (type == "county"){
-    data(hist_county, package = "histmaps", envir = env)
-    res <- subset(hist_county, from <= x & tom >= y)
-  }
-  if (type == "parish") {
-    data(hist_parish, package = "histmaps", envir = env)
-    res <- subset(hist_parish, from <= x & tom >= y)
-    # add county
-    if (!period){
-      data(par_to_county, package = "histmaps", envir = env)
-      slot(res, "data") <- par_to_county %>% 
-        filter(from <= x, tom >= y) %>% 
-        select(nadkod, county) %>% 
-        left_join(slot(res, "data"), ., by = "nadkod")
-    }
-  }
-  if (type == "town"){
-    data(hist_town, package = "histmaps", envir = env)
-    res <- subset(hist_town, from <= x & tom >= y)
-  }
-
-  if (period) {
-    # get new  commbined id 
-    ids <- get_period(x, y)
-    res <- get_period_map(res, ids)
-    return(list(map = switch(format,
-        sp = res,
-        df = sp_to_ggplot(res),
-        meta = res@data
-      ), lookup = ids))
-  }
-
+  format <- match.arg(format)
+  
+  date_l <- get_date(date)
+  x <- date_l$x
+  y <- date_l$y
+  
+  data(hist_town, package = "histmaps", envir = env)
+  res <- subset(hist_town, from <= x & tom >= y)
   return(switch(format,
-    sp = res,
-    df = sp_to_ggplot(res),
-    sf = to_sf(res),
-    meta = res@data
-  ))
+                sp = res,
+                df = as.data.frame(res),
+                meta = res@data))
 }
 
-to_sf <- function(x){
-  x@data <- as_tibble(x@data)
-  sf::st_as_sf(x)
-}
 
 #' Get year
 #'
@@ -102,6 +105,7 @@ to_sf <- function(x){
 #'
 #' @param x An oabject to be converted
 #' @param ... other paramaters for methods
+#' @importFrom lubridate ymd year
 
 get_year <- function(x, ...) UseMethod("get_year", x)
 
@@ -126,56 +130,9 @@ get_year.character <- function(x, ...) {
   if (!is.na(y))
     return(y)
   else
-    as.integer(stringr::str_extract(x, "^[0-9]{1,4}"))
+    as.integer(grep( "^[0-9]{1,4}", x, value = T))
 }
 
 get_year.default <- function(x, ...) {
   as.integer(lubridate::year(x))
-}
-
-#' Get common boundaries over a period
-#'
-#' Description
-#'
-#' @param x end
-#' @param y start
-#' 
-
-
-get_period <- function(x, y){
-  # for a range get all relationscodes that are stretching over period
-  e <- environment()
-  data(parish_relations, package = "histmaps", envir = e)
-  data(hist_parish, package = "histmaps", envir = e)
-
-  rels <- filter(parish_relations, year <= x, year >= y) %>% 
-    select(nadkod, nadkod2)
-  pars <- slot(subset(hist_parish, from <= x & tom >= y), "data") %>% 
-    mutate(nadkod2 = nadkod) %>% 
-    select(nadkod, nadkod2)
-  parsc <- rbind(rels, pars) %>% 
-    distinct() %>% 
-    mutate(geomid = create_block(nadkod, nadkod2)) %>% 
-    select(nadkod, geomid) %>% distinct()
-  return(parsc)
-}
-
-
-get_period_map <- function(m, ids){
-  
-  d <- slot(m, "data") %>% 
-    select(nadkod) %>% 
-    left_join(ids, by = "nadkod")
-    
-  stopifnot(all(!is.na(d$geomid)))
-  stopifnot(nrow(d) == nrow(m))
-
-  slot(m, "data") <- d
-  res <- unionSpatialPolygons(m, m@data$geomid)
-   
-  dat <- data.frame(geomid = unique(ids$geomid))
-  rownames(dat) <- unique(ids$geomid)
-  res <- SpatialPolygonsDataFrame(res, dat)
-  
-  return(res)
 }

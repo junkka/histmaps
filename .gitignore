@@ -5,3 +5,5 @@ inst/doc
 histmaps.sublime-project
 histmaps.sublime-workspace
 .Rproj.user
+data-raw/data
+data-raw/*.zip

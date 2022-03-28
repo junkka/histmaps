@@ -1,0 +1,14 @@
+library(rgrass7)
+initGRASS("/usr/bin/grass", home=tempdir(), override = T)
+execGRASS("g.list type=vector")
+
+# v.in.ogr input=/home/rstudiojunkka/rproj/histmaps/tempshps/e1900temp/e1900temp.shp layer=e1900temp output=e1900temp --overwrite snap=0.2
+# v.out.ogr input=e1900temp@johan output=outshps/e1900fixed format=ESRI_Shapefile
+# v.in.ogr input=/home/rstudiojunkka/rproj/histmaps/tempshps/e1930temp/e1930temp.shp layer=e1930temp output=e1930temp --overwrite snap=0.2
+# v.out.ogr input=e1930temp@johan output=outshps/e1930fixed format=ESRI_Shapefile
+# v.in.ogr input=/home/rstudiojunkka/rproj/histmaps/tempshps/e1960temp/e1960temp.shp layer=e1960temp output=e1960temp --overwrite snap=0.2
+# v.out.ogr input=e1960temp@johan output=outshps/e1960fixed format=ESRI_Shapefile
+# v.in.ogr input=/home/rstudiojunkka/rproj/histmaps/tempshps/e1990temp/e1990temp.shp layer=e1990temp output=e1990temp --overwrite snap=5.5
+# v.out.ogr input=e1990temp@johan output=outshps/e1990fixed format=ESRI_Shapefile
+# v.in.ogr input=/home/rstudiojunkka/rproj/histmaps/tempshps/e2003temp/e2003temp.shp layer=e2003temp output=e2003temp --overwrite snap=0.2
+# v.out.ogr input=e2003temp@johan output=outshps/e2003fixed format=ESRI_Shapefile

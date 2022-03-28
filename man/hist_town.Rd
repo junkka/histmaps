@@ -4,16 +4,18 @@
 \name{hist_town}
 \alias{hist_town}
 \title{County towns}
-\format{A \code{SpatialPolygonsDataFrame} with 28 elements
+\format{
+A \code{Simple feature} collection with 31 elements
 \describe{
   \item{code}{County code}
   \item{town}{County town name}
   \item{from}{From year}
   \item{tom}{To year}
-}}
+}
+}
 \usage{
 data(hist_town)
 }
 \description{
-County towns, residensstad
+County towns, residensstad. Projection: SWEREF99 EPSG:3006
 }

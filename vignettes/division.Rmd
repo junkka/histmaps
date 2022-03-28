@@ -1,0 +1,31 @@
+---
+title: "Administarative devisions"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{divistions}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+| English           | Swedish                  | Start  | End   | Units  | Geoms   |
+| :--------         | :----------              | -----: | ----: | -----: | ------: |
+| Diocese           | Stift                    | 1600   | 1970  | 371    | 521     |
+| Contract          | Kontrakt                 | 1600   | 1990  | 442    | 959     |
+| Pastorship        | Pastorat                 | 1600   | 1990  | 297    | 423     |
+| Parish            | Kyrksocken               | 1683   | 1990  | 6      | 20      |
+| Municipal         | Kommun / stad            | 1863   | 1990  | 2933   | 3543    |
+| Court             | Hovrätt                  | 1600   | 1990  | 269    | 539     |
+| County            | Län                      | 1600   | 1990  | 2714   | 3081    |
+| District court    | Tingsrätt                | 1686   | 1990  | 30     | 80      |
+| Hundred           | Härad / stad / skeppslag | 1600   | 1990  | 1885   | 3108    |
+| Magistrates court | Domsaga / rådhusrätt     | 1600   | 1990  | 13     | 37      |
+| Bailiwick         | Fögderi / stad           | 1971   | 1990  | 110    | 143     |
+
+parish -> hundered -> magistrate -> court
+parish -> municipal -> district court -> court
+parish -> municipal -> county
+parish -> bailiwick -> county
+
+parish -> pastorship -> contract -> diocese
