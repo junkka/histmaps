@@ -1,8 +1,16 @@
 library(sf)
+library(tidyverse)
+
 
 load("../histmaps/data/par_to_county.rda")
 
 par_to_county <- par_to_county %>% as_tibble() 
+
+load("../histmaps/data/hist_parish.rda")
+load("../histmaps/data/hist_county.rda")
+
+meta <- hist_parish@data %>% as_tibble()
+meta2 <- hist_county@data %>% as_tibble()
 
 meta_parish <- meta %>% 
   mutate(ref_code = sprintf("SE/%09d", nadkod)) %>% 
@@ -31,6 +39,8 @@ res <- st_set_crs(res, st_crs(geom_sp)) %>% mutate(
   ref_code = ifelse(lan == 27, "SE/180000004", ref_code)
 )
 
+load("../histmaps/data/geom_sp.rda")
+
 res3 <- geom_sp %>% filter(type_id == "county") %>% st_as_data_frame()
 
 
@@ -48,6 +58,10 @@ res4 <- res4 %>%
 res5 <- res4 %>% 
   select(
     geom_id, topo_id, ref_code, name = name.x, type, type_id, start =from, end = tom
+  ) %>% 
+  mutate(
+    type_id = "county",
+    type    = "County"
   )
 
 meta2 <- res4 %>% select(geom_id, topo_id, ref_code, lan, letter, center, name.x, name.y) %>% 
@@ -56,6 +70,7 @@ meta2 <- res4 %>% select(geom_id, topo_id, ref_code, lan, letter, center, name.x
 geom_sp <- geom_sp %>% filter(type_id != "county") %>% 
   rbind(res5)
 
+# geom_sp <- st_transform(geom_sp, 3006)
 
 save(geom_sp, file= "data/geom_sp.rda", compress = "xz")
 
@@ -76,6 +91,9 @@ overlapps <- function(x1,y1,x2,y2){
 meta_parish <- meta_parish %>% left_join(par_to_county) %>% 
   filter(overlapps(start, end, from, tom)) %>% 
   mutate(id = row_number())
+
+
+par_d <- geom_sp %>% filter(type_id == "parish")
 
 meta_parish <- st_set_crs(meta_parish, st_crs(par_d))
 
