@@ -144,7 +144,7 @@ res <- map(shps_names, f)
 # 
 
 library(leaflet)
-source("../histmaps/R/leaflet_func.R")
+library(leafletwrapper)
 
 
 xs <- do.call(rbind, res)

@@ -55,11 +55,36 @@ plot(st_geometry(map))
 
 ## Parish map
 
-``` r
-p_map <- get_boundaries("1866-06-06", "parish")
+Meta data for parishes and counties are collected in a separate file.
 
-st_map <- p_map %>% filter(str_detect(ref_code, "SE/03"))
-ggplot(st_map) +
+``` r
+data("geom_meta")
+
+geom_meta %>% 
+  filter(type_id == "parish") %>% 
+  head() %>% 
+  knitr::kable()
+```
+
+| geom_id | topo_id                                | ref_code     | county | letter | center | name.x                  | name.y       | type_id |    nadkod | grkod | dedik | dedikscb | forkod | from |  tom |
+|--------:|:---------------------------------------|:-------------|-------:|:-------|:-------|:------------------------|:-------------|:--------|----------:|------:|------:|---------:|-------:|-----:|-----:|
+|   15293 | {9396AF46-A0B0-11D3-9E53-009027B0FCE9} | SE/230301000 |     22 | NA     | NA     | Ragunda församling      | RAGUNDA      | parish  | 230301000 |   900 | 83750 |   230301 | 230301 |    0 | 1809 |
+|   15294 | {9396AF46-A0B0-11D3-9E53-009027B0FCE9} | SE/230301000 |     23 | NA     | NA     | Ragunda församling      | RAGUNDA      | parish  | 230301000 |   900 | 83750 |   230301 | 230301 | 1810 | 9999 |
+|   15536 | {9396AF47-A0B0-11D3-9E53-009027B0FCE9} | SE/230302000 |     22 | NA     | NA     | Fors församling (Z-län) | FORS (Z-län) | parish  | 230302000 |   900 | 83760 |   230302 | 230302 |    0 | 1809 |
+|   15537 | {9396AF47-A0B0-11D3-9E53-009027B0FCE9} | SE/230302000 |     23 | NA     | NA     | Fors församling (Z-län) | FORS (Z-län) | parish  | 230302000 |   900 | 83760 |   230302 | 230302 | 1810 | 9999 |
+|   14444 | {9396AF48-A0B0-11D3-9E53-009027B0FCE9} | SE/230303000 |     22 | NA     | NA     | Borgvattnets församling | BORGVATTNET  | parish  | 230303000 |   900 | 83740 |   230303 | 230303 | 1781 | 1809 |
+|   14445 | {9396AF48-A0B0-11D3-9E53-009027B0FCE9} | SE/230303000 |     23 | NA     | NA     | Borgvattnets församling | BORGVATTNET  | parish  | 230303000 |   900 | 83740 |   230303 | 230303 | 1810 | 9999 |
+
+Meta data wich can be used to easly subset data, for example by county.
+
+``` r
+p_map <- get_boundaries("1866", "parish")
+
+
+st_map <- p_map %>% left_join(geom_meta, by = c("geom_id"))
+
+st_map %>% filter(county == 25) %>% 
+  ggplot() +
   geom_sf(fill = "lightgrey", color = "black") +
   theme_minimal()
 ```
@@ -100,3 +125,44 @@ knitr::kable(head(period_map$lookup))
 |     692 |      4 |
 |     696 |      5 |
 |     740 |      6 |
+
+## Map with boundaries
+
+``` r
+data("geom_borders")
+
+st_map_borders <- geom_borders %>% 
+  filter(start <= 1866, end >= 1866) %>% 
+  left_join(geom_meta, by = c("geom_id"))
+
+
+ggplot() +
+  geom_sf(data = st_map %>% filter(county == 22), color = NA) +
+  geom_sf(data = st_map_borders %>% filter(county == 22)) + 
+  theme_minimal()
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-2-1.png) ## Adding
+background map
+
+``` r
+data("eu_geom")
+data("eu_border")
+
+eu_1900 <- eu_geom %>% filter(year == 1900) %>% st_transform(st_crs(map))
+eu_border_1900 <- eu_border %>% filter(year == 1900)%>% st_transform(st_crs(map))
+
+county_map <- geom_borders %>% filter(start <= 1900, end >= 1900, type_id == "county")
+
+lims <- st_bbox(map)
+
+ggplot() +
+  geom_sf(data = eu_1900, color = NA) +
+  geom_sf(data =county_map, color = "gray60", size = .3) +
+  geom_sf(data = eu_border_1900, color = "gray60") +
+  coord_sf(xlim = lims[c(1,3)], ylim = lims[c(2,4)])  +
+  theme_void() +
+  theme(panel.background = element_rect(fill = "#9bbff4", color =NA))
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)

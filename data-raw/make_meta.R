@@ -34,14 +34,15 @@ meta2 %>%
 
 res <- hist_county %>% st_as_sf()
 
+load("../histmaps/data/geom_sp.rda")
+
 res <- st_set_crs(res, st_crs(geom_sp)) %>% mutate(
   ref_code = sprintf("SE/%09d", lan*1e7),
   ref_code = ifelse(lan == 27, "SE/180000004", ref_code)
 )
 
-load("../histmaps/data/geom_sp.rda")
 
-res3 <- geom_sp %>% filter(type_id == "county") %>% st_as_data_frame()
+res3 <- geom_sp %>% filter(type_id == "county") %>% histmaps::st_as_data_frame()
 
 
 
@@ -65,7 +66,7 @@ res5 <- res4 %>%
   )
 
 meta2 <- res4 %>% select(geom_id, topo_id, ref_code, lan, letter, center, name.x, name.y) %>% 
-  st_as_data_frame() %>% mutate(type_id = "county")
+  histmaps::st_as_data_frame() %>% mutate(type_id = "county")
 
 geom_sp <- geom_sp %>% filter(type_id != "county") %>% 
   rbind(res5)
@@ -109,14 +110,14 @@ d2 <- d1 %>%
 
 # d2
 
-no_meta <- par_d %>% filter(!geom_id %in% unique(d2$geom_id)) %>% st_as_data_frame()
+no_meta <- par_d %>% filter(!geom_id %in% unique(d2$geom_id)) %>% histmaps::st_as_data_frame()
 
 manual_meta <- read_csv("data-raw/meta-manual.csv") %>% select(-name)
 
 d3 <- d2 %>% 
   select(
     geom_id, id, start = from, end = tom 
-  ) %>% st_as_data_frame() %>% 
+  ) %>% histmaps::st_as_data_frame() %>% 
   bind_rows(manual_meta)
 
 d4 <- d3 %>% 
@@ -127,8 +128,8 @@ d5 <- d4 %>%
     geom_id =  (max(geom_sp$geom_id):(max(geom_sp$geom_id)+nrow(d4)-1)+1)
   ) 
 
-meta_p <- meta_parish %>% st_as_data_frame() %>% 
-  left_join(d5 %>% st_as_data_frame() %>% select(geom_id, topo_id, name, id, type_id)) %>% 
+meta_p <- meta_parish %>% histmaps::st_as_data_frame() %>% 
+  left_join(d5 %>% histmaps::st_as_data_frame() %>% select(geom_id, topo_id, name, id, type_id)) %>% 
   select(geom_id, type_id ,topo_id,  ref_code, name.x = name, name.y = socken, nadkod, grkod:forkod, county, from, tom)
 
 geom_p <- d5 %>% select(-id)
@@ -137,6 +138,13 @@ geom_sp2 <- rbind(geom_sp %>% filter(type_id != "parish"), geom_p) %>%
   select(-topo_id)
 
 geom_sp <- geom_sp2 
+
+all(geom_sp$geom_id[geom_sp$type_id == "parish"] %in% meta_p$geom_id[meta_p$type_id == "parish"])
+
+all(meta_p$geom_id[meta_p$type_id == "parish"] %in% geom_sp$geom_id[geom_sp$type_id == "parish"])
+
+
+geom_sp <- st_transform(geom_sp, crs = 3006)
 
 save(geom_sp, file = "data/geom_sp.rda", compress = "xz")
 
