@@ -117,3 +117,19 @@ ggplot() +
   theme(panel.background = element_rect(fill = "#9bbff4", color =NA))
 ```
 
+```{r}
+library(leaflet)
+library(leafletwrapper)
+
+county_map <- get_boundaries(1900, "county")
+
+county_map <- county_map %>% 
+  left_join(geom_meta, by = "geom_id")
+
+data("hist_town")
+
+leaf_init() %>% 
+  leaf_polygon(county_map, interactive = T,lbl = "name.x") %>% 
+  leaf_marker(hist_town, interactive = T,lbl = "town")
+```
+

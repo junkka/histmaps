@@ -8,13 +8,13 @@ db <- pgrs_connect("rstudiojunkka")
 
 preceding <- pgrs_query(db, 
 "
-    SELECT n1.geom_id, n2.geom_id as geom_id_2, n2.end_p as year,
+    SELECT n1.geom_id, n2.geom_id as geom_id_2, n2.stop as year,
       n1.type_id
-    FROM sweboundaries n1 
-    LEFT JOIN sweboundaries n2 ON 
+    FROM geom_sp n1 
+    LEFT JOIN geom_sp n2 ON 
       ST_Intersects(n1.geometry, n2.geometry)
-      AND n1.start_p = n2.end_p +1
-    WHERE n1.start_p > 0 
+      AND n1.start = n2.stop +1
+    WHERE n1.start > 0 
       AND ST_area(ST_Intersection(n1.geometry, n2.geometry)) > 10000
       AND n1.type_id = n2.type_id
     ")
@@ -22,13 +22,13 @@ preceding <- pgrs_query(db,
 
 succeeding <- pgrs_query(db, 
                         "
-    SELECT n1.geom_id, n2.geom_id as geom_id_2, n2.end_p as year, 
+    SELECT n1.geom_id, n2.geom_id as geom_id_2, n2.stop as year, 
     n1.type_id
-    FROM sweboundaries n1 
-    LEFT JOIN sweboundaries n2 ON 
+    FROM geom_sp n1 
+    LEFT JOIN geom_sp n2 ON 
       ST_Intersects(n1.geometry, n2.geometry)
-      AND n1.end_p = n2.start_p -1
-    WHERE n1.end_p < 9999 
+      AND n1.stop = n2.start -1
+    WHERE n1.stop < 9999 
       AND ST_area(ST_Intersection(n1.geometry, n2.geometry)) > 10000
       AND n1.type_id = n2.type_id
     ")

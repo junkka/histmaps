@@ -11,7 +11,7 @@ Description: A R data package of Swedish historical administrative
 Depends: R (>= 4.1)
 License: MIT + file LICENSE
 LazyData: true
-LazyDataCompression:xz
+LazyDataCompression: xz
 Imports: tibble,
     sf,
     utils,
@@ -20,4 +20,4 @@ Imports: tibble,
     lubridate
 Suggests: ggplot2, knitr, rmarkdown, tidyverse
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3

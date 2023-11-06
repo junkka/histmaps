@@ -1,27 +1,36 @@
-#' Get boundaries
-#' 
-#' Get administrative boundaries 
-#' 
-#' @param date a date
-#' @param type type of unit
-#' @param format format of return object
+#' Retrieve Administrative Boundaries
+#'
+#' This function obtains administrative boundaries for a specific date and type of unit, allowing users to specify the format of the returned object.
+#'
+#' @param date A date for which the boundaries should be retrieved.
+#' @param type A character vector indicating the type of administrative unit (default options are available). Possible values include: "magistrate", "bailiwick", "hundred", "court", "municipal", "contract", "parish", "county", "pastorship", "diocese", and "district_couryt".
+#' @param format A character indicating the format of the returned object (default is "sf").
+#' @param boundary_type A character string specifying the type of boundaries to return. Choose between "polygons" (default) for polygon shapes of the administrative units, and "borders" for the multiline border representation of the units.
 #' 
 #' @import sf
 #' @importFrom stats aggregate
 #' @importFrom utils data
 #' @importFrom methods slot "slot<-"
 #' @export
+#' @examples
+#' 
+#' county_map <- get_boundaries(1800, "county")
+#' 
+#' plot(st_geometry(county_map))
+#' 
 
 get_boundaries <- function(
   date, 
   type = c("magistrate", "bailiwick", "hundred", "court", "municipal", 
            "contract", "parish", "county", "pastorship", "diocese", "district_couryt"), 
-  format = "sf"){
+  format = c("sf", "meta"),
+  boundary_type = c("polygons", "borders")){
   
   
   
   typed <- match.arg(type)
   format <- match.arg(format)
+  boundary_type <- match.arg(boundary_type)
   
 
   date_l <- get_date(date)
@@ -34,21 +43,28 @@ get_boundaries <- function(
   
   env <- environment()
   
-  data(geom_sp, package = "histmaps", envir = env)
-  # res <- filter(geom_sp, start <= y, end >= x, type_id == typed)
-  res <- filter_period_type(geom_sp, x, y, typed)
-  # add county
-  
-  if (period) {
-    # get new  commbined id 
-    ids <- get_geom_period(x, y, typed)
-    res <- get_geom_period_map(res, ids, typed)
-    return(list(map = switch(format,
-                             sf = res,
-                             meta = st_as_data_frame(sf)
-    ), lookup = ids))
+  if (boundary_type == "polygons") {
+    data(geom_sp, package = "histmaps", envir = env)
+    # res <- filter(geom_sp, start <= y, end >= x, type_id == typed)
+    res <- filter_period_type(geom_sp, x, y, typed)
+    # add county
+    
+    if (period) {
+      # get new  commbined id 
+      ids <- get_geom_period(x, y, typed)
+      res <- get_geom_period_map(res, ids, typed)
+      return(list(map = switch(format,
+                               sf = res,
+                               meta = st_as_data_frame(sf)
+      ), lookup = ids))
+    }
+  } else {
+    if (x != y) {
+      stop("For 'borders', date must be a single year")
+    }
+    data(geom_borders, package = "histmaps", envir = env)
+    res <- filter_period_type(geom_borders, x, y, typed)
   }
-  
   
   return(switch(format,
                 sf = res,
